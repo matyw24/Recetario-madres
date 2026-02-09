@@ -21,17 +21,24 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
   const [selectedRecipe, setSelectedRecipe] = useState<Recipe | null>(null);
   const [isCookingMode, setIsCookingMode] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
+  const [searchQuery, setSearchQuery] = useState('');
 
   // --- Logic for Lists ---
   const filteredRecipes = useMemo(() => {
     let result = recipes;
 
-    // 1. Filter by Age
+    // 1. Filter by Search Query
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      result = result.filter(r => r.title.toLowerCase().includes(query));
+    }
+
+    // 2. Filter by Age
     if (selectedAge !== 'All') {
       result = result.filter(r => r.ageCategory === selectedAge);
     }
 
-    // 2. Filter by Pantry Ingredients (Inclusive: if recipe has ANY of the selected ingredients)
+    // 3. Filter by Pantry Ingredients (Inclusive: if recipe has ANY of the selected ingredients)
     if (selectedPantryIngredients.length > 0) {
       result = result.filter(recipe => {
         // Check if any of the recipe ingredients string contains any of the selected pantry ingredient names
@@ -44,7 +51,7 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
     }
 
     return result;
-  }, [recipes, selectedAge, selectedPantryIngredients]);
+  }, [recipes, selectedAge, selectedPantryIngredients, searchQuery]);
 
   const categories: { label: string, value: AgeCategory | 'All' }[] = [
     { label: 'TODOS', value: 'All' },
@@ -253,7 +260,7 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
     <div className="min-h-screen bg-white dark:bg-zinc-900 transition-colors duration-300">
       {/* Header matching the screenshot */}
       <header className="sticky top-0 z-50 bg-white dark:bg-zinc-900 px-5 pt-8 pb-4 shadow-sm dark:shadow-zinc-800/50">
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
             <div className="w-12 h-12 rounded-[18px] bg-[#ff5e92] flex items-center justify-center text-white shadow-lg shadow-pink-100 dark:shadow-none">
               <span className="material-symbols-outlined fill-1 text-2xl">restaurant</span>
@@ -269,6 +276,26 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
           >
             <span className="material-symbols-outlined">menu</span>
           </button>
+        </div>
+
+        {/* Search Bar */}
+        <div className="relative mb-4">
+          <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400">search</span>
+          <input 
+            type="text"
+            placeholder="Buscar receta..."
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            className="w-full bg-zinc-50 dark:bg-zinc-800 text-zinc-900 dark:text-white rounded-2xl py-3 pl-12 pr-10 text-sm font-medium outline-none border border-zinc-100 dark:border-zinc-700 focus:border-pink-300 dark:focus:border-pink-700 transition-colors placeholder:text-zinc-400"
+          />
+          {searchQuery && (
+            <button 
+              onClick={() => setSearchQuery('')}
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200"
+            >
+              <span className="material-symbols-outlined text-lg">close</span>
+            </button>
+          )}
         </div>
 
         {/* Categories Pills */}
@@ -383,6 +410,7 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
               onClick={() => {
                 if (onClearPantryFilter) onClearPantryFilter();
                 setSelectedAge('All');
+                setSearchQuery('');
               }}
               className="mt-4 text-[#ff5e92] font-bold text-sm"
             >

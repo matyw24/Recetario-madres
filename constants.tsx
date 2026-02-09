@@ -959,5 +959,433 @@ export const INITIAL_RECIPES: Recipe[] = [
     imageUrl: 'https://images.unsplash.com/photo-1605307399823-37542d99d3e8?q=80&w=600&auto=format&fit=crop',
     ingredients: ['Nueces', 'Almendras', 'Pasas de uva', 'Cereales'],
     instructions: ['Mezcla todo en un frasco hermético.', 'Sirve porciones pequeñas.']
+  },
+
+  // --- NEW IMPORTED RECIPES (FROM USER TEXT) ---
+  {
+    id: 'r_new_01',
+    title: 'Rollito de Zanahoria',
+    description: 'Divertidos rollitos de pan con un relleno cremoso y nutritivo.',
+    time: '35 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['DIVERSIÓN', 'VEGGIE'],
+    imageUrl: 'https://images.unsplash.com/photo-1559811814-e2c57b5e69df?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['Rodaja de pan', '1 cda Yogurt', 'Zanahoria rallada', '1 Huevo', 'Canela', 'Vainilla', 'Aceite'],
+    instructions: [
+      'Aplasta la rodaja de pan con un rodillo.',
+      'Unta el yogurt y agrega la zanahoria rallada.',
+      'Enrolla el pan.',
+      'Mezcla huevo, canela y vainilla en un bowl.',
+      'Pasa el rollito por la mezcla de huevo.',
+      'Dora en sartén con aceite por todos lados.'
+    ]
+  },
+  {
+    id: 'r_new_02',
+    title: 'Arroz de Coliflor',
+    description: 'Una alternativa ligera al arroz tradicional, llena de vegetales.',
+    time: '40 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['ALMUERZO', 'VEGGIE'],
+    imageUrl: 'https://images.unsplash.com/photo-1536304993881-ff000997fb66?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['4 arbolitos de coliflor', '1/2 taza de caldo de pollo', '1 cda queso parmesano', 'Aceite'],
+    instructions: [
+      'Tritura el coliflor en licuadora o picadora hasta que parezca arroz.',
+      'Sofríe el coliflor en aceite por 3 min.',
+      'Agrega el caldo y el queso.',
+      'Cocina por 5 min hasta que esté tierno.'
+    ]
+  },
+  {
+    id: 'r_new_03',
+    title: 'Bolitas de Arroz y Espinaca',
+    description: 'Perfectas para aprovechar sobras de arroz. Fáciles de agarrar.',
+    time: '30 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['FINGER FOOD', 'HIERRO'],
+    imageUrl: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['60g queso rallado', '4 hojas espinaca', '1/2 taza arroz', '1/2 plátano', 'Harina de avena'],
+    instructions: [
+      'Mezcla arroz y queso en un bowl.',
+      'Tritura el plátano y agrégalo.',
+      'Pica finamente la espinaca y añádela.',
+      'Mezcla bien y forma bolitas con la mano.',
+      'Pásalas por harina de avena.',
+      'Dora en sartén o al horno a 140° por 10 min.'
+    ]
+  },
+  {
+    id: 'r_new_04',
+    title: 'Tostada Francesa de Arándanos',
+    description: 'Desayuno dulce y especial para fines de semana.',
+    time: '10 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['DESAYUNO', 'DULCE'],
+    imageUrl: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['Pan tajado', '1 huevo', 'Vainilla', 'Canela', 'Leche', '1/2 taza arándanos', '2 cdas queso crema', 'Aceite'],
+    instructions: [
+      'Tritura los arándanos y mézclalos con el queso crema.',
+      'Mezcla huevo, vainilla, canela y leche en un bowl.',
+      'Pasa el pan por la mezcla de huevo.',
+      'Unta la mezcla de arándanos sobre el pan.',
+      'Dora en sartén por ambos lados.'
+    ]
+  },
+  {
+    id: 'r_new_05',
+    title: 'Salmón en Salsa de Coco',
+    description: 'Pescado suave con un toque tropical cremoso.',
+    time: '40 min',
+    difficulty: 'Media',
+    ageCategory: '10-12m',
+    tags: ['OMEGA 3', 'GOURMET'],
+    imageUrl: 'https://images.unsplash.com/photo-1467003909585-2f8a7270028d?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['125g salmón fresco', '1/2 taza leche de coco', '2 cdas yogur natural', '1 diente ajo', 'Cebolla', 'Aceite', 'Coco rallado'],
+    instructions: [
+      'Sofríe ajo y cebolla picados.',
+      'Añade el salmón y dora.',
+      'Mezcla leche de coco con yogur y agrégalo a la sartén.',
+      'Cocina 10 min.',
+      'Agrega coco rallado y cocina 2 min más.'
+    ]
+  },
+  {
+    id: 'r_new_06',
+    title: 'Palitos de Coliflor',
+    description: 'Forma divertida de comer vegetales. Textura suave por dentro.',
+    time: '35 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['FINGER FOOD', 'VEGGIE'],
+    imageUrl: 'https://images.unsplash.com/photo-1542528180-a1208c5169a5?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['3 tallos coliflor cocido', '1 papa pequeña cocida', 'Queso rallado'],
+    instructions: [
+      'Tritura coliflor y papa con un tenedor.',
+      'Agrega queso rallado y mezcla hasta formar una masa.',
+      'Forma palitos con las manos.',
+      'Dora en sartén con un poco de aceite.'
+    ]
+  },
+  {
+    id: 'r_new_07',
+    title: 'Waffles de Yuca',
+    description: 'Sin gluten, hechos con yuca (mandioca) y mucho queso.',
+    time: '30 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['SIN GLUTEN', 'DESAYUNO'],
+    imageUrl: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['1 trozo yuca cocida', '1/2 taza queso mozzarella rallado'],
+    instructions: [
+      'Cocina la yuca hasta que esté blanda.',
+      'Mezcla en bowl la yuca y el queso hasta integrar.',
+      'Arma bolitas.',
+      'Cocina en wafflera aceitada aplastando las bolitas.'
+    ]
+  },
+  {
+    id: 'r_new_08',
+    title: 'Bocaditos de Zanahoria',
+    description: 'Tortillitas naranjas llenas de calcio y vitamina A.',
+    time: '25 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['CENA', 'LIGERO'],
+    imageUrl: 'https://images.unsplash.com/photo-1596910547037-846b1980329f?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['1/2 zanahoria rallada', '1/2 taza queso mozzarella', '1 huevo'],
+    instructions: [
+      'Mezcla zanahoria rallada cruda, queso y huevo.',
+      'Debe quedar una mezcla consistente.',
+      'Cocina como una tortilla en sartén antiadherente.',
+      'Corta en trozos o figuras.'
+    ]
+  },
+  {
+    id: 'r_new_09',
+    title: 'Muffins de Coliflor y Queso',
+    description: 'Ideales para preparar en cantidad y congelar.',
+    time: '35 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['HORNO', 'BATCH COOKING'],
+    imageUrl: 'https://images.unsplash.com/photo-1616866199468-d064560d2681?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['10 arboles coliflor', '2 huevos', '125g queso mozzarella', 'Ajo en polvo', 'Aceite de oliva'],
+    instructions: [
+      'Tritura el coliflor crudo hasta que parezca arroz.',
+      'Mezcla con huevos, queso, aceite y ajo en polvo.',
+      'Coloca en moldes de muffins.',
+      'Hornea a 180°C por 15-20 min.'
+    ]
+  },
+  {
+    id: 'r_new_10',
+    title: 'Nuggets de Pollo y Espinaca',
+    description: 'Pollo camuflado con vegetales. Caseros y saludables.',
+    time: '40 min',
+    difficulty: 'Media',
+    ageCategory: '10-12m',
+    tags: ['PROTEÍNA', 'HIERRO'],
+    imageUrl: 'https://images.unsplash.com/photo-1563292787-814d42010839?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['250g pechuga pollo', '2 cdas queso crema', '4 hojas espinaca', '1 huevo', '2 cdas harina trigo', '4 cdas pan rallado', 'Aceite'],
+    instructions: [
+      'Cocina y pica la espinaca.',
+      'Tritura la pechuga de pollo cruda.',
+      'Mezcla pollo, queso crema y espinaca. Forma nuggets.',
+      'Pasa por harina, luego huevo batido y finalmente pan rallado.',
+      'Fríe en aceite o hornea a 200°C por 15 min.'
+    ]
+  },
+  {
+    id: 'r_new_11',
+    title: 'Puré de Papa con Pollo',
+    description: 'Un clásico reconfortante, suave y fácil de comer.',
+    time: '30 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['CLÁSICO', 'ALMUERZO'],
+    imageUrl: 'https://images.unsplash.com/photo-1619894991069-5d75d506db49?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['150g papa', '40g pechuga pollo', '25g poro', 'Aceite de oliva'],
+    instructions: [
+      'Cocina papa y poro en agua por 20 min.',
+      'Añade el pollo los últimos 5 minutos.',
+      'Tritura todo añadiendo agua de cocción según necesites.',
+      'Sirve con un chorrito de aceite de oliva.'
+    ]
+  },
+  {
+    id: 'r_new_12',
+    title: 'Bocaditos de Brócoli',
+    description: 'Croquetas horneadas llenas de sabor.',
+    time: '30 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['VEGGIE', 'HORNO'],
+    imageUrl: 'https://images.unsplash.com/photo-1615485499710-3c224b6113b2?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['550g brócoli', '2 huevos', '60g harina almendra', '75g queso cheddar', '2 dientes ajo', 'Aceite de oliva'],
+    instructions: [
+      'Hierve el brócoli 5-10 min y escurre MUY bien el agua.',
+      'Pica finamente y mezcla con huevos, queso, harina y ajo.',
+      'Forma cilindros y pincela con aceite.',
+      'Hornea a 180°C por 20 min hasta dorar.'
+    ]
+  },
+  {
+    id: 'r_new_13',
+    title: 'Barritas de Avena y Plátano',
+    description: 'Snack energético natural sin azúcar añadida.',
+    time: '10 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['SNACK', 'ENERGÍA'],
+    imageUrl: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['1 plátano muy maduro', '5 cdas avena', '2 cdas leche', '3 cdas anacardos crudos', 'Canela'],
+    instructions: [
+      'Tritura anacardos y aplasta el plátano.',
+      'Mezcla todo en un tazón y deja reposar 5 min.',
+      'Pon en molde apto microondas y cocina 3-5 min a potencia alta.',
+      'Corta en barritas cuando enfríe un poco.'
+    ]
+  },
+  {
+    id: 'r_new_14',
+    title: 'Galletas de Aceite de Oliva',
+    description: 'Galletas suaves aromáticas con naranja.',
+    time: '30 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['MERIENDA', 'CASERO'],
+    imageUrl: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['Cáscara naranja', '125ml jugo naranja', '1 huevo', '400g harina repostería', '100ml aceite oliva', 'Levadura', 'Canela', '120g dátiles'],
+    instructions: [
+      'Hidrata y tritura los dátiles hasta hacer pasta.',
+      'Mezcla huevo, jugo, ralladura, aceite y pasta de dátiles.',
+      'Incorpora harina con levadura y canela.',
+      'Reposa masa 30 min, estira y corta formas.',
+      'Hornea 10 min a 180°C.'
+    ]
+  },
+  {
+    id: 'r_new_15',
+    title: 'Pasta con Zapallo y Salchicha',
+    description: 'Plato principal completo y sabroso.',
+    time: '40 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['ALMUERZO', 'PRINCIPAL'],
+    imageUrl: 'https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['200g pasta', '100g zapallo', '100g salchicha fresca', '1 diente ajo', '50g cebolla', 'Aceite oliva'],
+    instructions: [
+      'Saltea cebolla, ajo y zapallo en cubitos.',
+      'Desmenuza la salchicha (sin piel) y añádela al sofrito.',
+      'Cocina la pasta y mézclala con el sofrito.',
+      'Sirve tibio.'
+    ]
+  },
+  {
+    id: 'r_new_16',
+    title: 'Huevos Revueltos Suaves',
+    description: 'Cena rápida y rica en proteínas.',
+    time: '10 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['CENA', 'RÁPIDO'],
+    imageUrl: 'https://images.unsplash.com/photo-1598155523122-3842334d6c10?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['2 huevos', '1 cda leche', 'Aceite oliva'],
+    instructions: [
+      'Bate los huevos con la leche.',
+      'Cocina en sartén a fuego lento removiendo suavemente.',
+      'Retira cuando esté cuajado pero aún húmedo.'
+    ]
+  },
+  {
+    id: 'r_new_17',
+    title: 'Lentejas con Arroz',
+    description: 'Combinación perfecta de proteínas vegetales.',
+    time: '60 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['VEGANO', 'HIERRO'],
+    imageUrl: 'https://images.unsplash.com/photo-1511421676839-4467c69da979?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['300g lentejas', '200g arroz integral', '100g zanahoria', '100g cebolla', 'Aceite oliva'],
+    instructions: [
+      'Sofríe cebolla y zanahoria.',
+      'Añade lentejas (remojadas) y cubre con agua.',
+      'Cocina 30 min, añade arroz y cocina 20 min más hasta que todo esté tierno.'
+    ]
+  },
+  {
+    id: 'r_new_18',
+    title: 'Nuggets de Pollo Casero',
+    description: 'Versión pura carne, sin aditivos.',
+    time: '60 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['FAVORITO', 'PROTEÍNA'],
+    imageUrl: 'https://images.unsplash.com/photo-1563292787-814d42010839?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['500g pechuga pollo', '175g queso crema', '2 huevos', '4 cdas harina trigo', '4 cdas pan rallado', 'Aceite oliva'],
+    instructions: [
+      'Tritura el pollo y mezcla con queso crema.',
+      'Forma nuggets, pasa por harina, huevo y pan rallado.',
+      'Fríe en aceite medio hasta dorar bien por ambos lados.'
+    ]
+  },
+  {
+    id: 'r_new_19',
+    title: 'Muffins de Coliflor XL',
+    description: 'Otra variante de muffins de vegetales, muy esponjosos.',
+    time: '30 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['BATCH COOKING', 'VEGGIE'],
+    imageUrl: 'https://images.unsplash.com/photo-1616866199468-d064560d2681?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['350g coliflor', '5 huevos', '200g queso rallado', 'Ajo en polvo', 'Aceite oliva'],
+    instructions: [
+      'Tritura coliflor cruda.',
+      'Mezcla con huevos batidos, queso y condimentos.',
+      'Hornea en moldes a 180°C por 15-20 min.'
+    ]
+  },
+  {
+    id: 'r_new_20',
+    title: 'Garbanzos con Tomate',
+    description: 'Estofado rápido usando legumbres ya cocidas.',
+    time: '25 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['ALMUERZO', 'LEGUMBRES'],
+    imageUrl: 'https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['400g tomate natural', '300g garbanzos cocidos', '2 dientes ajo', 'Aceite oliva'],
+    instructions: [
+      'Cuela el tomate triturado para quitar exceso de agua.',
+      'Sofríe tomate con ajo rallado por 10 min.',
+      'Agrega garbanzos y cocina 5 min más para integrar sabores.'
+    ]
+  },
+  {
+    id: 'r_new_21',
+    title: 'Colada de Avena y Manzana',
+    description: 'Bebida espesa y reconfortante, ideal para días fríos.',
+    time: '20 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['BEBIDA', 'AVENA'],
+    imageUrl: 'https://images.unsplash.com/photo-1517093602157-961f6ea467a8?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['100g avena', '3 manzanas', 'Canela', 'Clavo de olor', 'Pimienta dulce', 'Agua'],
+    instructions: [
+      'Hierve agua con especias por 10 min.',
+      'Licúa avena (remojada) y manzanas con un poco de agua.',
+      'Vierte mezcla en el agua hirviendo y cocina 5 min removiendo.',
+      'Cuela y sirve tibio o frío.'
+    ]
+  },
+  {
+    id: 'r_new_22',
+    title: 'Bizcocho de Manzana',
+    description: 'Dulce, húmedo y con fruta real en cada bocado.',
+    time: '35 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['POSTRE', 'FRUTA'],
+    imageUrl: 'https://images.unsplash.com/photo-1598514930607-4228c2e680a1?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['200g harina', '90ml aceite oliva', 'Levadura', '3 huevos', '70ml leche', '3 manzanas', 'Canela'],
+    instructions: [
+      'Mezcla harina, levadura, leche, huevos, aceite y canela.',
+      'Añade manzanas laminadas finas.',
+      'Hornea a 160°C por 25 min.'
+    ]
+  },
+  {
+    id: 'r_new_23',
+    title: 'Bizcocho de Zapallo',
+    description: 'Sabor especiado suave y textura increíble.',
+    time: '35 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['POSTRE', 'VEGGIE'],
+    imageUrl: 'https://images.unsplash.com/photo-1598514930607-4228c2e680a1?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['220g harina', '400g zapallo', '75ml aceite oliva', '2 huevos', 'Levadura', 'Bicarbonato', 'Canela', 'Clavo', 'Nuez moscada', 'Azúcar (opcional)'],
+    instructions: [
+      'Cocina el zapallo y haz puré.',
+      'Mezcla huevos, aceite y puré.',
+      'Incorpora secos (harina, levadura, especias).',
+      'Hornea a 180°C por 20-25 min.'
+    ]
+  },
+  {
+    id: 'r_new_24',
+    title: 'Pastel de Papa y Merluza',
+    description: 'Una forma deliciosa de comer pescado.',
+    time: '25 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['PESCADO', 'ALMUERZO'],
+    imageUrl: 'https://images.unsplash.com/photo-1565259960244-0c5a04dd906a?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['300g papas', '100g merluza', 'Aceite oliva', 'Pan rallado', 'Perejil'],
+    instructions: [
+      'Cocina papas y merluza.',
+      'Haz puré con la papa y desmenuza el pescado.',
+      'Mezcla con perejil y pan rallado. Forma pasteles.',
+      'Refrigera 1h y luego dora en sartén.'
+    ]
+  },
+  {
+    id: 'r_new_25',
+    title: 'Tortilla de Espinaca Dulce',
+    description: 'Curiosa combinación con plátano y yogur, ¡les encanta!',
+    time: '25 min',
+    difficulty: 'Baja',
+    ageCategory: '10-12m',
+    tags: ['DESAYUNO', 'VERDE'],
+    imageUrl: 'https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?q=80&w=600&auto=format&fit=crop',
+    ingredients: ['1 taza espinacas baby', '1 yogur griego', '100g avena', '1/2 plátano'],
+    instructions: [
+      'Licúa todo junto hasta tener una masa.',
+      'Reposa 10 min.',
+      'Cocina tortitas pequeñas en sartén antiadherente.'
+    ]
   }
 ];
