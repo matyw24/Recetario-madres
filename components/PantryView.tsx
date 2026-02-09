@@ -7,32 +7,46 @@ interface PantryViewProps {
   onToggle: (id: string) => void;
   selectedCount: number;
   onSearch: () => void;
+  onOpenSettings: () => void;
 }
 
-const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selectedCount, onSearch }) => {
+const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selectedCount, onSearch, onOpenSettings }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
+  // Normalize text to ignore accents and case (e.g., "limón" == "limon")
+  const normalize = (text: string) => 
+    text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
   const filtered = ingredients.filter(i => 
-    i.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+    normalize(i.name).includes(normalize(searchTerm))
+  ).sort((a, b) => {
+    // Show selected items first
+    if (a.selected && !b.selected) return -1;
+    if (!a.selected && b.selected) return 1;
+    // Then alphabetical
+    return a.name.localeCompare(b.name);
+  });
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-bg-light dark:bg-zinc-900 transition-colors duration-300">
       <header className="flex items-center justify-between p-4 pt-6">
-        <button className="flex size-10 items-center justify-center rounded-full bg-white shadow-sm">
+        <button onClick={onSearch} className="flex size-10 items-center justify-center rounded-full bg-white dark:bg-zinc-800 shadow-sm text-zinc-600 dark:text-zinc-300 hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors">
           <span className="material-symbols-outlined">arrow_back_ios_new</span>
         </button>
-        <h1 className="text-lg font-bold tracking-tight">Mi Despensa</h1>
-        <button className="flex size-10 items-center justify-center rounded-full bg-white shadow-sm">
-          <span className="material-symbols-outlined">history</span>
+        <h1 className="text-lg font-bold tracking-tight text-text-main dark:text-white">Mi Despensa</h1>
+        <button 
+          onClick={onOpenSettings}
+          className="flex size-10 items-center justify-center rounded-full bg-white dark:bg-zinc-800 shadow-sm text-zinc-900 dark:text-white hover:bg-zinc-50 dark:hover:bg-zinc-700 transition-colors"
+        >
+          <span className="material-symbols-outlined">menu</span>
         </button>
       </header>
 
       <section className="px-6 pt-4 pb-4">
-        <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-text-main">
+        <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-text-main dark:text-white">
           ¿Qué tienes hoy a mano?
         </h2>
-        <p className="mt-2 text-text-muted text-base">
+        <p className="mt-2 text-text-muted dark:text-text-muted/80 text-base">
           Toque los ingredientes para seleccionarlos. Te ayudaremos a decidir qué cocinar.
         </p>
       </section>
@@ -41,7 +55,7 @@ const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selected
         <div className="relative">
           <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400">search</span>
           <input 
-            className="w-full rounded-full border-none bg-white py-4 pl-12 pr-4 shadow-sm focus:ring-2 focus:ring-primary transition-all outline-none" 
+            className="w-full rounded-full border-none bg-white dark:bg-zinc-800 dark:text-white py-4 pl-12 pr-4 shadow-sm focus:ring-2 focus:ring-primary transition-all outline-none" 
             placeholder="Buscar ingrediente..." 
             type="text"
             value={searchTerm}
@@ -59,10 +73,10 @@ const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selected
               className={`flex h-12 items-center gap-x-2 rounded-full px-5 shadow-sm transition-all active:scale-95 border ${
                 ing.selected 
                   ? 'bg-primary border-primary text-text-main font-semibold' 
-                  : 'bg-white border-zinc-100 text-zinc-700 font-medium'
+                  : 'bg-white dark:bg-zinc-800 border-zinc-100 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 font-medium'
               }`}
             >
-              <span className={`material-symbols-outlined ${ing.selected ? 'text-text-main' : 'text-zinc-500'}`}>{ing.icon}</span>
+              <span className={`material-symbols-outlined ${ing.selected ? 'text-text-main' : 'text-zinc-500 dark:text-zinc-400'}`}>{ing.icon}</span>
               <span className="text-sm">{ing.name}</span>
               {ing.selected && <span className="material-symbols-outlined text-xs font-bold">check</span>}
             </button>
@@ -71,18 +85,18 @@ const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selected
 
         <div className="mt-12 p-6 rounded-xl bg-primary/20 border border-primary/30">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#578e76]">Estado de Stock</p>
+            <p className="text-sm font-bold uppercase tracking-widest text-[#578e76] dark:text-[#a8e5cc]">Estado de Stock</p>
             <span className="text-xs font-medium bg-primary px-2 py-1 rounded-full text-text-main">
               {selectedCount}/10 Seleccionados
             </span>
           </div>
-          <div className="w-full bg-white h-2 rounded-full overflow-hidden">
+          <div className="w-full bg-white dark:bg-zinc-700 h-2 rounded-full overflow-hidden">
             <div 
-              className="bg-[#578e76] h-full transition-all duration-500" 
+              className="bg-[#578e76] dark:bg-[#a8e5cc] h-full transition-all duration-500" 
               style={{ width: `${(selectedCount / 10) * 100}%` }}
             ></div>
           </div>
-          <p className="mt-3 text-xs text-[#578e76] leading-relaxed">
+          <p className="mt-3 text-xs text-[#578e76] dark:text-[#a8e5cc] leading-relaxed">
             Añade más ingredientes para desbloquear recetas personalizadas que reducen el desperdicio.
           </p>
         </div>
@@ -93,7 +107,7 @@ const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selected
           onClick={onSearch}
           disabled={selectedCount === 0}
           className={`flex w-full items-center justify-center rounded-full h-16 px-5 text-lg font-bold shadow-xl transition-all active:scale-95 ${
-            selectedCount > 0 ? 'bg-primary text-text-main shadow-primary/20' : 'bg-zinc-200 text-zinc-400 shadow-none'
+            selectedCount > 0 ? 'bg-primary text-text-main shadow-primary/20' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-600 shadow-none'
           }`}
         >
           <span className="material-symbols-outlined mr-2">search_insights</span>

@@ -37,4 +37,6 @@ export interface Recipe {
   imageUrl: string;
   isFavorite?: boolean;
   isQuick?: boolean;
+  ingredients: string[];
+  instructions: string[];
 }
