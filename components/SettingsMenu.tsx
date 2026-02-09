@@ -6,9 +6,18 @@ interface SettingsMenuProps {
   onClose: () => void;
   isDarkMode: boolean;
   toggleDarkMode: () => void;
+  onLogout?: () => void;
+  userEmail?: string;
 }
 
-const SettingsMenu: React.FC<SettingsMenuProps> = ({ isOpen, onClose, isDarkMode, toggleDarkMode }) => {
+const SettingsMenu: React.FC<SettingsMenuProps> = ({ 
+  isOpen, 
+  onClose, 
+  isDarkMode, 
+  toggleDarkMode, 
+  onLogout,
+  userEmail 
+}) => {
   if (!isOpen) return null;
 
   return (
@@ -33,7 +42,9 @@ const SettingsMenu: React.FC<SettingsMenuProps> = ({ isOpen, onClose, isDarkMode
               <span className="material-symbols-outlined text-4xl text-pink-500">face_3</span>
            </div>
            <h2 className="text-xl font-bold text-zinc-900 dark:text-white">Mamá en Apuros</h2>
-           <p className="text-sm text-zinc-500 dark:text-zinc-400 font-medium">Premium Member</p>
+           <p className="text-sm text-zinc-500 dark:text-zinc-400 font-medium truncate max-w-[200px]">
+             {userEmail || 'Invitado'}
+           </p>
         </div>
 
         <div className="space-y-3 flex-1">
@@ -68,10 +79,15 @@ const SettingsMenu: React.FC<SettingsMenuProps> = ({ isOpen, onClose, isDarkMode
         </div>
 
         <div className="pt-6 border-t border-zinc-100 dark:border-zinc-800">
-           <button className="w-full py-3.5 text-red-500 dark:text-red-400 font-bold bg-red-50 dark:bg-red-900/10 hover:bg-red-100 dark:hover:bg-red-900/20 rounded-xl transition-colors text-sm flex items-center justify-center gap-2">
-              <span className="material-symbols-outlined text-lg">logout</span>
-              Cerrar Sesión
-           </button>
+           {onLogout && (
+             <button 
+              onClick={onLogout}
+              className="w-full py-3.5 text-red-500 dark:text-red-400 font-bold bg-red-50 dark:bg-red-900/10 hover:bg-red-100 dark:hover:bg-red-900/20 rounded-xl transition-colors text-sm flex items-center justify-center gap-2"
+             >
+                <span className="material-symbols-outlined text-lg">logout</span>
+                Cerrar Sesión
+             </button>
+           )}
            <p className="text-center text-[10px] text-zinc-400 mt-4 uppercase tracking-widest">Version 2.4.0</p>
         </div>
       </div>

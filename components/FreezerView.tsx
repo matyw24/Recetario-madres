@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { FreezerItem } from '../types';
+import { supabase } from '../supabaseClient';
 
 interface FreezerViewProps {
   items: FreezerItem[];
@@ -19,21 +20,39 @@ const FreezerView: React.FC<FreezerViewProps> = ({ items, setItems, onOpenSettin
   const [newItemQuantity, setNewItemQuantity] = useState(1);
   const [newItemTips, setNewItemTips] = useState('');
 
-  const updateQuantity = (id: string, delta: number) => {
+  const updateQuantity = async (id: string, delta: number) => {
+    const item = items.find(i => i.id === id);
+    if (!item) return;
+    
+    const newQuantity = Math.max(0, item.quantity + delta);
+
+    // Optimistic UI
     setItems(prev => prev.map(item => 
-      item.id === id ? { ...item, quantity: Math.max(0, item.quantity + delta) } : item
+      item.id === id ? { ...item, quantity: newQuantity } : item
     ));
+
+    // DB Update
+    await supabase.from('freezer_items').update({ quantity: newQuantity }).eq('id', id);
   };
 
-  const confirmDelete = () => {
+  const confirmDelete = async () => {
     if (itemToDelete) {
+      // Optimistic
       setItems(prev => prev.filter(item => item.id !== itemToDelete));
+      
+      // DB
+      await supabase.from('freezer_items').delete().eq('id', itemToDelete);
+      
       setItemToDelete(null);
     }
   };
 
-  const handleAddItem = () => {
+  const handleAddItem = async () => {
     if (!newItemName.trim()) return;
+
+    const tipsArray = newItemTips.trim() 
+      ? newItemTips.split('\n').filter(t => t.trim()) 
+      : ['General: Descongelar en heladera.', 'Calentar bien antes de consumir.'];
 
     const newItem: FreezerItem = {
       id: `freezer_${Date.now()}`,
@@ -41,12 +60,21 @@ const FreezerView: React.FC<FreezerViewProps> = ({ items, setItems, onOpenSettin
       description: newItemDesc || new Date().toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }),
       quantity: newItemQuantity,
       imageUrl: '', 
-      reheatingTips: newItemTips.trim() 
-        ? newItemTips.split('\n').filter(t => t.trim()) 
-        : ['General: Descongelar en heladera.', 'Calentar bien antes de consumir.']
+      reheatingTips: tipsArray
     };
 
+    // Optimistic
     setItems(prev => [...prev, newItem]);
+    
+    // DB - Map to snake_case columns
+    await supabase.from('freezer_items').insert({
+      id: newItem.id,
+      name: newItem.name,
+      description: newItem.description,
+      quantity: newItem.quantity,
+      image_url: newItem.imageUrl,
+      reheating_tips: newItem.reheatingTips
+    });
     
     // Reset and close
     setNewItemName('');

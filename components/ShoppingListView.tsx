@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { ShoppingItem } from '../types';
+import { supabase } from '../supabaseClient';
 
 interface ShoppingListViewProps {
   items: ShoppingItem[];
@@ -12,17 +13,29 @@ const ShoppingListView: React.FC<ShoppingListViewProps> = ({ items, setItems, on
   const [newItemName, setNewItemName] = useState('');
   const [showClearConfirm, setShowClearConfirm] = useState(false);
 
-  const toggleCheck = (id: string) => {
+  const toggleCheck = async (id: string) => {
+    const item = items.find(i => i.id === id);
+    if (!item) return;
+
+    const newChecked = !item.checked;
+
+    // Optimistic
     setItems(prev => prev.map(item => 
-      item.id === id ? { ...item, checked: !item.checked } : item
+      item.id === id ? { ...item, checked: newChecked } : item
     ));
+
+    // DB
+    await supabase.from('shopping_items').update({ checked: newChecked }).eq('id', id);
   };
 
-  const deleteItem = (id: string) => {
+  const deleteItem = async (id: string) => {
+    // Optimistic
     setItems(prev => prev.filter(item => item.id !== id));
+    // DB
+    await supabase.from('shopping_items').delete().eq('id', id);
   };
 
-  const addItem = () => {
+  const addItem = async () => {
     if (!newItemName.trim()) return;
     const newItem: ShoppingItem = {
       id: Date.now().toString(),
@@ -30,7 +43,13 @@ const ShoppingListView: React.FC<ShoppingListViewProps> = ({ items, setItems, on
       category: 'PASILLOS',
       checked: false
     };
+    
+    // Optimistic
     setItems(prev => [...prev, newItem]);
+    
+    // DB
+    await supabase.from('shopping_items').insert(newItem);
+    
     setNewItemName('');
   };
 
@@ -40,9 +59,13 @@ const ShoppingListView: React.FC<ShoppingListViewProps> = ({ items, setItems, on
     }
   };
 
-  const confirmClear = () => {
+  const confirmClear = async () => {
+    // Optimistic
     setItems([]);
     setShowClearConfirm(false);
+
+    // DB - assuming we delete everything in table or filter by user if auth existed
+    await supabase.from('shopping_items').delete().neq('id', 'placeholder'); // Hacky delete all
   };
 
   const categories = Array.from(new Set(items.map(item => item.category)));

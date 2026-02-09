@@ -91,7 +91,7 @@ export const INITIAL_FREEZER_ITEMS: FreezerItem[] = [
     name: 'Muffins de Espinaca',
     description: 'Etapa 6 meses+',
     quantity: 6,
-    imageUrl: './assets/recipes/muffins-espinaca.jpg',
+    imageUrl: '',
     reheatingTips: [
       'Microondas: 30-45 segundos.',
       'Sartén: A fuego bajo tapado por 2 min.'
@@ -115,7 +115,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '6m',
     tags: ['INICIO', 'SUAVE'],
-    imageUrl: 'https://lh3.googleusercontent.com/gg-dl/AOI_d_-e-P-LTB_oYqwQEeoP3mX2ct3AzZX9GOkOinqNkjBDgCfW1dTHPz3wZ7PPWw2kASJs9j97UX5dQZllbVcJ4TQ0BdFkxpMPyJMOMteHt4365GY6e1Xyvus7ENmsT5vIXRQ7AY1u8c4bN5F41CQQ3Mk1cGvwJ3gfjtu4M5KXAsyKkJiZ=s1024-rj?authuser=1',
+    imageUrl: '',
     isQuick: true,
     ingredients: [
       '1/4 taza de avena en hojuelas',
@@ -139,7 +139,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '7-9m',
     tags: ['HIERRO', 'PROTEÍNA'],
-    imageUrl: 'https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '100g de carne molida de ternera magra',
       '1/4 taza de zapallo rallado fino',
@@ -163,7 +163,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '6m',
     tags: ['BLW', 'ALTA FIBRA'],
-    imageUrl: 'https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1 zanahoria grande rallada',
       '1 huevo',
@@ -187,7 +187,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'EXPRESS'],
-    imageUrl: 'https://images.unsplash.com/photo-1629143609802-b2512a537f52?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1 manzana roja',
       '2 cucharadas de mantequilla de maní (sin azúcar)',
@@ -208,7 +208,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRÍO', 'VITAMINAS'],
-    imageUrl: 'https://images.unsplash.com/photo-1517424907994-6b2a4729c118?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1 taza de mango picado',
       '1 taza de yogurt natural sin azúcar',
@@ -229,7 +229,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['TROPICAL', 'SIN AZÚCAR'],
-    imageUrl: 'https://images.unsplash.com/photo-1601342630310-80252668516d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '2 plátanos maduros',
       '1/2 taza de coco rallado sin azúcar',
@@ -252,7 +252,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'GRASAS'],
-    imageUrl: 'https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1/2 pechuga de pollo cocida y desmenuzada',
       '1/2 palta (aguacate) madura',
@@ -275,7 +275,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CALCIO', 'SNACK'],
-    imageUrl: 'https://images.unsplash.com/photo-1599599810769-bcde5a160d32?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1 taza de yogurt griego natural',
       '1/2 taza de frutos rojos picados (fresas, arándanos)',
@@ -297,7 +297,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '10-12m',
     tags: ['OMEGA 3', 'GOURMET'],
-    imageUrl: 'https://images.unsplash.com/photo-1467003909585-2f8a7270028d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1 filete de salmón fresco',
       '1/4 taza de leche de coco',
@@ -320,7 +320,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '1-2a',
     tags: ['VEGGIE', 'SABROSO'],
-    imageUrl: 'https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1 berenjena mediana',
       '1 huevo',
@@ -344,7 +344,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FIBRA', 'SALUDABLE'],
-    imageUrl: 'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: [
       '1 taza de quinoa cocida',
       '2 plátanos muy maduros',
@@ -368,7 +368,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['LONCHERA', 'PROTEÍNA'],
-    imageUrl: 'https://images.unsplash.com/photo-1596910547037-846b1980329f?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['2 fetas de jamón cocido', '2 fetas de queso en barra', 'Queso crema (opcional)'],
     instructions: ['Extiende la feta de jamón.', 'Coloca el queso encima.', 'Enrolla firmemente y corta en bocados pequeños.']
   },
@@ -380,7 +380,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'FRESCO'],
-    imageUrl: 'https://images.unsplash.com/photo-1529312266912-b33cf6227e2f?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Tomates cherry', 'Bolitas de mozzarella (bocconcini)', 'Hojas de albahaca fresca'],
     instructions: ['Lava los tomates y la albahaca.', 'Inserta un tomate, una hoja de albahaca y una bolita de queso en un palillo corto.', 'Repite hasta terminar.']
   },
@@ -392,7 +392,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'CRUJIENTE'],
-    imageUrl: 'https://images.unsplash.com/photo-1623592395697-3f33664d436d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 manzana roja', 'Canela en polvo'],
     instructions: ['Corta la manzana en rodajas muy finas (mandolina es ideal).', 'Coloca en bandeja con papel manteca y espolvorea canela.', 'Hornea a temperatura muy baja (100°C) por 45-60 min hasta que sequen.']
   },
@@ -404,7 +404,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'DIP'],
-    imageUrl: 'https://images.unsplash.com/photo-1637822521948-4cb98e470878?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['2 zanahorias', '1 taza de garbanzos cocidos', 'Jugo de limón', 'Aceite de oliva'],
     instructions: ['Corta las zanahorias en bastones.', 'Procesa los garbanzos con limón y aceite hasta lograr una pasta.', 'Sirve los bastones junto al hummus.']
   },
@@ -416,7 +416,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['RÁPIDO', 'SALUDABLE'],
-    imageUrl: 'https://images.unsplash.com/photo-1621257007727-4148003f9829?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['2 tortitas de arroz inflado', '1/2 palta madura', 'Semillas de sésamo'],
     instructions: ['Unta la palta sobre las tortitas.', 'Decora con semillas de sésamo por encima.']
   },
@@ -428,7 +428,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'LONCHERA'],
-    imageUrl: 'https://images.unsplash.com/photo-1563292787-814d42010839?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['6 huevos de codorniz', 'Agua'],
     instructions: ['Hierve los huevos por 4-5 minutos.', 'Enfría en agua helada y pélalos con cuidado.', 'Envía en un tupper pequeño.']
   },
@@ -440,7 +440,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['CASERO', 'ENERGÍA'],
-    imageUrl: 'https://images.unsplash.com/photo-1590483038663-8dc94129b057?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 taza de avena', '1/2 taza de miel (para +2 años)', 'Frutos secos picados'],
     instructions: ['Mezcla la avena y frutos secos.', 'Calienta la miel y vierte sobre la mezcla.', 'Prensa en un molde y refrigera antes de cortar en barras.']
   },
@@ -452,7 +452,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'SIN HARINA'],
-    imageUrl: 'https://images.unsplash.com/photo-1606101256038-d68a9f60b451?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 pepino grande', 'Queso crema', 'Jamon o pavo'],
     instructions: ['Corta el pepino en rodajas gruesas.', 'Úsalas como tapas para hacer sándwiches con el queso y jamón en el medio.']
   },
@@ -464,7 +464,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DULCE', 'SIN COCCIÓN'],
-    imageUrl: 'https://images.unsplash.com/photo-1594982637255-7489ba111758?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 taza de dátiles sin carozo', '1/2 taza de nueces', 'Coco rallado'],
     instructions: ['Procesa los dátiles y nueces hasta formar una pasta.', 'Forma bolitas con las manos.', 'Pásalas por coco rallado.']
   },
@@ -476,7 +476,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'VERANO'],
-    imageUrl: 'https://images.unsplash.com/photo-1596238641974-9f7962eb7b1a?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Uvas sin semillas (verdes o rojas)'],
     instructions: ['Lava bien las uvas y sécalas.', 'Coloca en una bolsa hermética y congela por 2 horas.', 'Consumir directamente del freezer (corte longitudinal para <4 años).']
   },
@@ -488,7 +488,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'SALADO'],
-    imageUrl: 'https://images.unsplash.com/photo-1502479268686-353df1846171?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['3 huevos', 'Espinaca picada', 'Queso rallado'],
     instructions: ['Bate los huevos con la espinaca y el queso.', 'Vierte en moldes de muffins engrasados.', 'Hornea a 180°C por 15 minutos.']
   },
@@ -500,7 +500,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FIBRA', 'CRUJIENTE'],
-    imageUrl: 'https://images.unsplash.com/photo-1597401391742-880c55490a2a?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Garbanzos cocidos', 'Aceite de oliva', 'Pimentón dulce'],
     instructions: ['Seca bien los garbanzos.', 'Mézclalos con aceite y pimentón.', 'Hornea a 200°C por 20-30 min moviendo a la mitad.']
   },
@@ -512,7 +512,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['LONCHERA', 'VERSÁTIL'],
-    imageUrl: 'https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Tortilla de trigo o maíz', 'Hummus o queso crema', 'Espinaca fresca'],
     instructions: ['Unta la tortilla con el hummus.', 'Coloca hojas de espinaca.', 'Enrolla y corta en rodajas tipo espiral.']
   },
@@ -524,7 +524,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['RÁPIDO', 'CALCIO'],
-    imageUrl: 'https://images.unsplash.com/photo-1601309584849-c1432f94d930?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Queso en cubo (Gouda o Tybo)', 'Uvas sin semillas'],
     instructions: ['Corta el queso en cubos del tamaño de las uvas.', 'Mezcla en un tupper o alterna en palillos.']
   },
@@ -536,7 +536,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['BEBIBLE', 'FRUTA'],
-    imageUrl: 'https://images.unsplash.com/photo-1563632938361-512c01990479?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 taza de leche', '5 frutillas', '2 cdas de avena instantánea'],
     instructions: ['Licúa todos los ingredientes hasta que esté suave.', 'Sirve frío.']
   },
@@ -548,7 +548,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['COLORIDO', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1598514930607-4228c2e680a1?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 remolacha cocida', '1 huevo', '1/2 taza harina avena', 'Leche'],
     instructions: ['Licúa la remolacha con el huevo y leche.', 'Agrega harina hasta tener consistencia de pancake.', 'Cocina en sartén vuelta y vuelta.']
   },
@@ -560,7 +560,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DULCE', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1522256449129-cb53d623275c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 taza zanahoria rallada fina', '1/2 taza nueces molidas', 'Coco rallado', 'Dátiles'],
     instructions: ['Procesa todo junto hasta formar una masa.', 'Haz bolitas y refrigera.']
   },
@@ -572,7 +572,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'RÁPIDO'],
-    imageUrl: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Manzana verde', 'Mantequilla de maní', 'Granola'],
     instructions: ['Corta la manzana en rodajas.', 'Unta mantequilla de maní en una rodaja, agrega granola y tapa con otra rodaja.']
   },
@@ -584,7 +584,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CEREAL', 'COMPARTIR'],
-    imageUrl: 'https://images.unsplash.com/photo-1578849278619-e73505e9610f?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Maíz pisingallo', 'Aceite', 'Pizca de sal o azúcar'],
     instructions: ['Calienta aceite en olla, agrega maíz y tapa.', 'Mueve la olla hasta que dejen de explotar.']
   },
@@ -596,7 +596,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRESCO', 'POSTRE'],
-    imageUrl: 'https://images.unsplash.com/photo-1528659570783-6677f8ce0731?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Gelatina de sabor', 'Trozos de durazno o pera'],
     instructions: ['Prepara la gelatina según el paquete.', 'Agrega la fruta picada antes de que cuaje y refrigera.']
   },
@@ -608,7 +608,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CALIENTE', 'EXPRESS'],
-    imageUrl: 'https://images.unsplash.com/photo-1579294248744-9388147d2ce8?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['4 cdas harina', '2 cdas azúcar', '1 huevo', 'Jugo limón', 'Aceite'],
     instructions: ['Mezcla todo en una taza apta microondas.', 'Cocina 1:30 a 2 minutos en potencia máxima.']
   },
@@ -620,7 +620,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['VEGANO', 'PROTEÍNA'],
-    imageUrl: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Tofu firme', 'Pan rallado', 'Salsa de soja'],
     instructions: ['Corta el tofu en triángulos.', 'Pásalo por salsa de soja y luego pan rallado.', 'Hornea o dora en sartén hasta que esté crocante.']
   },
@@ -632,7 +632,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['HORNO', 'SALADO'],
-    imageUrl: 'https://images.unsplash.com/photo-1573155734285-05d6cb04c35a?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Tapa de pascualina (hojaldre)', 'Queso rallado', 'Jamón picado'],
     instructions: ['Estira la masa, cubre con jamón y queso.', 'Enrolla y corta rodajas.', 'Hornea 15 min hasta dorar.']
   },
@@ -644,7 +644,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['GOURMET', 'FRESCO'],
-    imageUrl: 'https://images.unsplash.com/photo-1627838522308-596918d3568c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Tomates cherry', 'Atún', 'Queso crema'],
     instructions: ['Corta una tapita al tomate y vacía con cuidado.', 'Mezcla atún con queso crema y rellena.']
   },
@@ -656,7 +656,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['HORNO', 'GUARNICIÓN'],
-    imageUrl: 'https://images.unsplash.com/photo-1565492868202-b06f1224d06a?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Batatas', 'Aceite', 'Pimentón'],
     instructions: ['Corta batatas en bastones.', 'Mezcla con aceite y condimentos.', 'Hornea a fuego fuerte para que doren.']
   },
@@ -668,7 +668,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['POSTRE', 'SALUDABLE'],
-    imageUrl: 'https://images.unsplash.com/photo-1549646401-49934751480f?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 palta madura', '2 cdas cacao amargo', 'Miel o endulzante'],
     instructions: ['Procesa todo hasta obtener una crema lisa.', 'Refrigera antes de servir.']
   },
@@ -680,7 +680,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['SIN HARINA', 'CRUJIENTE'],
-    imageUrl: 'https://images.unsplash.com/photo-1590403756857-e17578ce8f46?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Mix de semillas (lino, chía, sésamo)', 'Agua', 'Sal'],
     instructions: ['Hidrata las semillas en agua hasta que suelten el gel.', 'Extiende en placa finita y hornea lento hasta secar.']
   },
@@ -692,7 +692,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'RECICLAJE'],
-    imageUrl: 'https://images.unsplash.com/photo-1627993078496-d8054b1f6d33?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Pollo cocido en cubos', 'Queso', 'Tomate'],
     instructions: ['Ensarta un cubo de pollo, uno de queso y uno de tomate en palillos pequeños.']
   },
@@ -704,7 +704,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['ALMUERZO', 'LONCHERA'],
-    imageUrl: 'https://images.unsplash.com/photo-1616866199468-d064560d2681?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Tapas de copetín', 'Salsa blanca espesa', 'Choclo en grano'],
     instructions: ['Mezcla choclo con salsa blanca y queso.', 'Rellena las tapas, cierra y hornea.']
   },
@@ -716,7 +716,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CEREAL', 'DULCE'],
-    imageUrl: 'https://images.unsplash.com/photo-1520630736862-58837e2996d9?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Arroz inflado', 'Mantequilla de maní', 'Miel'],
     instructions: ['Derrite mantequilla de maní con miel.', 'Mezcla con el arroz.', 'Enfría en molde y corta.']
   },
@@ -728,7 +728,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'POSTRE'],
-    imageUrl: 'https://images.unsplash.com/photo-1639148301548-262141528659?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Peras firmes', 'Canela', 'Jugo de naranja'],
     instructions: ['Corta peras a la mitad.', 'Rocía con jugo y canela.', 'Hornea hasta tiernas.']
   },
@@ -740,7 +740,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Dificil',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'CASERO'],
-    imageUrl: 'https://images.unsplash.com/photo-1595480749195-25b447817eb4?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Pechuga de pollo', 'Manzana rallada', 'Condimentos'],
     instructions: ['Procesa el pollo crudo con manzana y especias.', 'Dale forma en papel film y hierve o cocina al vapor.']
   },
@@ -752,7 +752,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['CLÁSICO', 'LONCHERA'],
-    imageUrl: 'https://images.unsplash.com/photo-1601625471616-8c4c5750269d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Papas', 'Huevos', 'Cebolla'],
     instructions: ['Haz una tortilla tradicional.', 'Deja enfriar bien y corta en cubos de 2x2cm.']
   },
@@ -764,7 +764,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['MERIENDA', 'FLEXIBLE'],
-    imageUrl: 'https://images.unsplash.com/photo-1517244683847-7456b63c5969?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Harina de avena', 'Leche', 'Huevo'],
     instructions: ['Mezcla hasta lograr masa líquida.', 'Haz crepes finos en sartén.', 'Rellena con fruta o queso.']
   },
@@ -776,7 +776,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'DULCE'],
-    imageUrl: 'https://images.unsplash.com/photo-1558223637-29969616335a?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Puré de calabaza', 'Harina', 'Azúcar mascabo', 'Aceite'],
     instructions: ['Mezcla húmedos con secos.', 'Forma galletas.', 'Hornea 15 min a 180°C.']
   },
@@ -788,7 +788,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VERDE', 'CRUJIENTE'],
-    imageUrl: 'https://images.unsplash.com/photo-1576045057995-568f588f82fb?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Hojas de Kale (sin tallo)', 'Aceite oliva', 'Sal'],
     instructions: ['Masajea las hojas con aceite.', 'Hornea a fuego medio hasta que estén secas y crujientes (cuidado que se queman rápido).']
   },
@@ -800,7 +800,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DULCE', 'FRUTA'],
-    imageUrl: 'https://images.unsplash.com/photo-1599321908977-80252668516d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Mandarinas', 'Chocolate amargo derretido'],
     instructions: ['Pela la mandarina.', 'Sumerge la mitad de cada gajo en chocolate.', 'Deja enfriar sobre papel manteca.']
   },
@@ -812,7 +812,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'CALIENTE'],
-    imageUrl: 'https://images.unsplash.com/photo-1502447951590-25816913c323?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Tortillas de trigo', 'Porotos negros pisados', 'Queso'],
     instructions: ['Unta pasta de porotos en tortilla, agrega queso.', 'Tapa con otra tortilla y dora en sartén hasta derretir queso.']
   },
@@ -824,7 +824,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'SALADO'],
-    imageUrl: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Carne picada de pavo/pollo', 'Avena', 'Huevo'],
     instructions: ['Mezcla todo y condimenta.', 'Haz bolitas pequeñas.', 'Hornea hasta que estén cocidas.']
   },
@@ -836,7 +836,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DIVERSIÓN', 'LONCHERA'],
-    imageUrl: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Pan de molde sin corteza', 'Queso crema', 'Palta/Jamón'],
     instructions: ['Aplana el pan con palote.', 'Rellena y enrolla.', 'Corta en rodajas como sushi.']
   },
@@ -848,7 +848,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRESCO', 'PORTÁTIL'],
-    imageUrl: 'https://images.unsplash.com/photo-1626078436815-585350c379a2?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Yogur natural', 'Banana', 'Frutos rojos congelados'],
     instructions: ['Licúa el yogur con frutas congeladas para que quede espeso.', 'Coloca en frasco y pon granola arriba.']
   },
@@ -860,7 +860,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['HORNO', 'FIBRA'],
-    imageUrl: 'https://images.unsplash.com/photo-1618331835717-801e976710b2?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Avena', 'Manzana rallada', 'Harina integral', 'Aceite'],
     instructions: ['Mezcla manzana, aceite y azúcar.', 'Agrega secos.', 'Hornea por 15 min.']
   },
@@ -872,7 +872,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['LIGERO', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1632782736171-87a34614d9b2?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Hojas de lechuga grandes', 'Pollo', 'Zanahoria rallada'],
     instructions: ['Usa la hoja como tortilla.', 'Rellena y enrolla.']
   },
@@ -884,7 +884,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'GOURMET'],
-    imageUrl: 'https://images.unsplash.com/photo-1621245645934-0498b9a13eb4?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Frutillas grandes', 'Yogur griego o queso crema endulzado'],
     instructions: ['Ahueca un poco las frutillas.', 'Rellena con la crema.']
   },
@@ -896,7 +896,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CRUJIENTE', 'SALADO'],
-    imageUrl: 'https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Pan pita', 'Aceite oliva', 'Orégano'],
     instructions: ['Corta el pan en triángulos.', 'Pincela con aceite y orégano.', 'Hornea hasta dorar.']
   },
@@ -908,7 +908,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FÁCIL', 'DULCE'],
-    imageUrl: 'https://images.unsplash.com/photo-1587849187127-393226d9d150?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['2 bananas', '2 huevos', '1/3 taza aceite', '1.5 taza harina'],
     instructions: ['Licúa banana, huevo y aceite.', 'Mezcla con harina.', 'Hornea en budinera.']
   },
@@ -920,7 +920,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['SALADO', 'QUESO'],
-    imageUrl: 'https://images.unsplash.com/photo-1550953282-5d41f3056094?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Queso rallado', 'Manteca', 'Harina'],
     instructions: ['Forma una masa con partes iguales de los 3.', 'Haz tiritas.', 'Hornea hasta dorar.']
   },
@@ -932,7 +932,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRESCO', 'LÁCTEO'],
-    imageUrl: 'https://images.unsplash.com/photo-1549488347-1941d441113b?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Pan integral', 'Ricota', 'Láminas de pera'],
     instructions: ['Tuesta el pan.', 'Unta ricota y coloca la pera.']
   },
@@ -944,7 +944,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['VERDE', 'DESAYUNO'],
-    imageUrl: 'https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Espinaca cruda', 'Banana', 'Huevo', 'Avena'],
     instructions: ['Licúa todo junto.', 'Cocina como pancakes normales.']
   },
@@ -956,7 +956,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['ENERGÍA', '+2 AÑOS'],
-    imageUrl: 'https://images.unsplash.com/photo-1605307399823-37542d99d3e8?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Nueces', 'Almendras', 'Pasas de uva', 'Cereales'],
     instructions: ['Mezcla todo en un frasco hermético.', 'Sirve porciones pequeñas.']
   },
@@ -970,7 +970,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['DIVERSIÓN', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1559811814-e2c57b5e69df?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Rodaja de pan', '1 cda Yogurt', 'Zanahoria rallada', '1 Huevo', 'Canela', 'Vainilla', 'Aceite'],
     instructions: [
       'Aplasta la rodaja de pan con un rodillo.',
@@ -989,7 +989,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['ALMUERZO', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1536304993881-ff000997fb66?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['4 arbolitos de coliflor', '1/2 taza de caldo de pollo', '1 cda queso parmesano', 'Aceite'],
     instructions: [
       'Tritura el coliflor en licuadora o picadora hasta que parezca arroz.',
@@ -1006,7 +1006,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['FINGER FOOD', 'HIERRO'],
-    imageUrl: 'https://images.unsplash.com/photo-1596797038530-2c107229654b?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['60g queso rallado', '4 hojas espinaca', '1/2 taza arroz', '1/2 plátano', 'Harina de avena'],
     instructions: [
       'Mezcla arroz y queso en un bowl.',
@@ -1025,7 +1025,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['DESAYUNO', 'DULCE'],
-    imageUrl: 'https://images.unsplash.com/photo-1484723091739-30a097e8f929?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Pan tajado', '1 huevo', 'Vainilla', 'Canela', 'Leche', '1/2 taza arándanos', '2 cdas queso crema', 'Aceite'],
     instructions: [
       'Tritura los arándanos y mézclalos con el queso crema.',
@@ -1043,7 +1043,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '10-12m',
     tags: ['OMEGA 3', 'GOURMET'],
-    imageUrl: 'https://images.unsplash.com/photo-1467003909585-2f8a7270028d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['125g salmón fresco', '1/2 taza leche de coco', '2 cdas yogur natural', '1 diente ajo', 'Cebolla', 'Aceite', 'Coco rallado'],
     instructions: [
       'Sofríe ajo y cebolla picados.',
@@ -1061,7 +1061,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['FINGER FOOD', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1542528180-a1208c5169a5?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['3 tallos coliflor cocido', '1 papa pequeña cocida', 'Queso rallado'],
     instructions: [
       'Tritura coliflor y papa con un tenedor.',
@@ -1078,7 +1078,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['SIN GLUTEN', 'DESAYUNO'],
-    imageUrl: 'https://images.unsplash.com/photo-1562376552-0d160a2f238d?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 trozo yuca cocida', '1/2 taza queso mozzarella rallado'],
     instructions: [
       'Cocina la yuca hasta que esté blanda.',
@@ -1095,7 +1095,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['CENA', 'LIGERO'],
-    imageUrl: 'https://images.unsplash.com/photo-1596910547037-846b1980329f?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1/2 zanahoria rallada', '1/2 taza queso mozzarella', '1 huevo'],
     instructions: [
       'Mezcla zanahoria rallada cruda, queso y huevo.',
@@ -1112,7 +1112,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['HORNO', 'BATCH COOKING'],
-    imageUrl: 'https://images.unsplash.com/photo-1616866199468-d064560d2681?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['10 arboles coliflor', '2 huevos', '125g queso mozzarella', 'Ajo en polvo', 'Aceite de oliva'],
     instructions: [
       'Tritura el coliflor crudo hasta que parezca arroz.',
@@ -1129,7 +1129,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '10-12m',
     tags: ['PROTEÍNA', 'HIERRO'],
-    imageUrl: 'https://images.unsplash.com/photo-1563292787-814d42010839?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['250g pechuga pollo', '2 cdas queso crema', '4 hojas espinaca', '1 huevo', '2 cdas harina trigo', '4 cdas pan rallado', 'Aceite'],
     instructions: [
       'Cocina y pica la espinaca.',
@@ -1147,7 +1147,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['CLÁSICO', 'ALMUERZO'],
-    imageUrl: 'https://images.unsplash.com/photo-1619894991069-5d75d506db49?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['150g papa', '40g pechuga pollo', '25g poro', 'Aceite de oliva'],
     instructions: [
       'Cocina papa y poro en agua por 20 min.',
@@ -1164,7 +1164,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['VEGGIE', 'HORNO'],
-    imageUrl: 'https://images.unsplash.com/photo-1615485499710-3c224b6113b2?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['550g brócoli', '2 huevos', '60g harina almendra', '75g queso cheddar', '2 dientes ajo', 'Aceite de oliva'],
     instructions: [
       'Hierve el brócoli 5-10 min y escurre MUY bien el agua.',
@@ -1181,7 +1181,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['SNACK', 'ENERGÍA'],
-    imageUrl: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 plátano muy maduro', '5 cdas avena', '2 cdas leche', '3 cdas anacardos crudos', 'Canela'],
     instructions: [
       'Tritura anacardos y aplasta el plátano.',
@@ -1198,7 +1198,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['MERIENDA', 'CASERO'],
-    imageUrl: 'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['Cáscara naranja', '125ml jugo naranja', '1 huevo', '400g harina repostería', '100ml aceite oliva', 'Levadura', 'Canela', '120g dátiles'],
     instructions: [
       'Hidrata y tritura los dátiles hasta hacer pasta.',
@@ -1216,7 +1216,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['ALMUERZO', 'PRINCIPAL'],
-    imageUrl: 'https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['200g pasta', '100g zapallo', '100g salchicha fresca', '1 diente ajo', '50g cebolla', 'Aceite oliva'],
     instructions: [
       'Saltea cebolla, ajo y zapallo en cubitos.',
@@ -1233,7 +1233,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['CENA', 'RÁPIDO'],
-    imageUrl: 'https://images.unsplash.com/photo-1598155523122-3842334d6c10?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['2 huevos', '1 cda leche', 'Aceite oliva'],
     instructions: [
       'Bate los huevos con la leche.',
@@ -1249,7 +1249,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['VEGANO', 'HIERRO'],
-    imageUrl: 'https://images.unsplash.com/photo-1511421676839-4467c69da979?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['300g lentejas', '200g arroz integral', '100g zanahoria', '100g cebolla', 'Aceite oliva'],
     instructions: [
       'Sofríe cebolla y zanahoria.',
@@ -1265,7 +1265,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['FAVORITO', 'PROTEÍNA'],
-    imageUrl: 'https://images.unsplash.com/photo-1563292787-814d42010839?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['500g pechuga pollo', '175g queso crema', '2 huevos', '4 cdas harina trigo', '4 cdas pan rallado', 'Aceite oliva'],
     instructions: [
       'Tritura el pollo y mezcla con queso crema.',
@@ -1281,7 +1281,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['BATCH COOKING', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1616866199468-d064560d2681?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['350g coliflor', '5 huevos', '200g queso rallado', 'Ajo en polvo', 'Aceite oliva'],
     instructions: [
       'Tritura coliflor cruda.',
@@ -1297,7 +1297,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['ALMUERZO', 'LEGUMBRES'],
-    imageUrl: 'https://images.unsplash.com/photo-1585937421612-70a008356f36?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['400g tomate natural', '300g garbanzos cocidos', '2 dientes ajo', 'Aceite oliva'],
     instructions: [
       'Cuela el tomate triturado para quitar exceso de agua.',
@@ -1313,7 +1313,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['BEBIDA', 'AVENA'],
-    imageUrl: 'https://images.unsplash.com/photo-1517093602157-961f6ea467a8?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['100g avena', '3 manzanas', 'Canela', 'Clavo de olor', 'Pimienta dulce', 'Agua'],
     instructions: [
       'Hierve agua con especias por 10 min.',
@@ -1330,7 +1330,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['POSTRE', 'FRUTA'],
-    imageUrl: 'https://images.unsplash.com/photo-1598514930607-4228c2e680a1?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['200g harina', '90ml aceite oliva', 'Levadura', '3 huevos', '70ml leche', '3 manzanas', 'Canela'],
     instructions: [
       'Mezcla harina, levadura, leche, huevos, aceite y canela.',
@@ -1346,7 +1346,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['POSTRE', 'VEGGIE'],
-    imageUrl: 'https://images.unsplash.com/photo-1598514930607-4228c2e680a1?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['220g harina', '400g zapallo', '75ml aceite oliva', '2 huevos', 'Levadura', 'Bicarbonato', 'Canela', 'Clavo', 'Nuez moscada', 'Azúcar (opcional)'],
     instructions: [
       'Cocina el zapallo y haz puré.',
@@ -1363,7 +1363,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['PESCADO', 'ALMUERZO'],
-    imageUrl: 'https://images.unsplash.com/photo-1565259960244-0c5a04dd906a?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['300g papas', '100g merluza', 'Aceite oliva', 'Pan rallado', 'Perejil'],
     instructions: [
       'Cocina papas y merluza.',
@@ -1380,7 +1380,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['DESAYUNO', 'VERDE'],
-    imageUrl: 'https://images.unsplash.com/photo-1621800043295-a73fe2f76e2c?q=80&w=600&auto=format&fit=crop',
+    imageUrl: '',
     ingredients: ['1 taza espinacas baby', '1 yogur griego', '100g avena', '1/2 plátano'],
     instructions: [
       'Licúa todo junto hasta tener una masa.',

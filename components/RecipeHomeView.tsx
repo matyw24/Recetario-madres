@@ -38,10 +38,9 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
       result = result.filter(r => r.ageCategory === selectedAge);
     }
 
-    // 3. Filter by Pantry Ingredients (Inclusive: if recipe has ANY of the selected ingredients)
+    // 3. Filter by Pantry Ingredients (Inclusive)
     if (selectedPantryIngredients.length > 0) {
       result = result.filter(recipe => {
-        // Check if any of the recipe ingredients string contains any of the selected pantry ingredient names
         return selectedPantryIngredients.some(pantryItem => 
           recipe.ingredients.some(recipeIng => 
             recipeIng.toLowerCase().includes(pantryItem.toLowerCase())
@@ -82,35 +81,29 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
   const handleAddToShopping = () => {
     if (selectedRecipe) {
       onAddToShoppingList(selectedRecipe.ingredients);
-      // Small visual feedback (alert for simplicity, toast in real app)
       alert('Ingredientes agregados a la lista de compras');
     }
   };
 
   // --- Views ---
 
-  // 1. COOKING MODE VIEW (Immersive)
+  // 1. COOKING MODE VIEW
   if (isCookingMode && selectedRecipe) {
     const totalSteps = selectedRecipe.instructions.length;
     const progress = ((currentStep + 1) / totalSteps) * 100;
 
     return (
       <div className="fixed inset-0 z-[100] bg-zinc-900 text-white flex flex-col">
-        {/* Header */}
         <div className="flex items-center justify-between p-6">
           <button onClick={() => setIsCookingMode(false)} className="text-zinc-400 hover:text-white">
             <span className="material-symbols-outlined text-3xl">close</span>
           </button>
           <div className="text-xs font-bold uppercase tracking-widest text-[#578e76]">Modo Cocina</div>
-          <div className="w-8"></div> {/* Spacer */}
+          <div className="w-8"></div>
         </div>
-
-        {/* Progress Bar */}
         <div className="w-full bg-zinc-800 h-1">
           <div className="bg-[#ff5e92] h-full transition-all duration-300" style={{ width: `${progress}%` }}></div>
         </div>
-
-        {/* Main Step Content */}
         <div className="flex-1 flex flex-col justify-center px-8 pb-10">
           <div className="mb-4 text-zinc-500 font-bold uppercase tracking-widest">
             Paso {currentStep + 1} de {totalSteps}
@@ -119,8 +112,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
             {selectedRecipe.instructions[currentStep]}
           </h2>
         </div>
-
-        {/* Controls */}
         <div className="p-8 pb-12 flex items-center justify-between bg-zinc-900 border-t border-zinc-800">
           <button 
             disabled={currentStep === 0}
@@ -129,7 +120,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
           >
             <span className="material-symbols-outlined text-2xl">arrow_back</span>
           </button>
-
           {currentStep < totalSteps - 1 ? (
             <button 
               onClick={() => setCurrentStep(p => p + 1)}
@@ -156,7 +146,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
   if (selectedRecipe) {
     return (
       <div className="min-h-screen bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white pb-24 animate-in slide-in-from-right duration-300">
-        {/* Navigation */}
         <div className="sticky top-0 z-50 bg-white/80 dark:bg-zinc-900/80 backdrop-blur-md px-4 py-4 flex items-center justify-between border-b border-zinc-50 dark:border-zinc-800">
           <button onClick={handleCloseRecipe} className="size-10 flex items-center justify-center rounded-full bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700">
             <span className="material-symbols-outlined">arrow_back</span>
@@ -170,11 +159,13 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
             </button>
           </div>
         </div>
-
-        {/* Hero Section */}
         <div className="px-5 pt-4 pb-8">
            <div className="w-full aspect-[4/3] rounded-[32px] bg-primary/20 flex items-center justify-center mb-6 overflow-hidden relative">
-              <span className="material-symbols-outlined text-7xl text-primary-dark/40">restaurant_menu</span>
+              {selectedRecipe.imageUrl ? (
+                  <img src={selectedRecipe.imageUrl} alt={selectedRecipe.title} className="w-full h-full object-cover" />
+              ) : (
+                  <span className="material-symbols-outlined text-7xl text-primary-dark/40">restaurant_menu</span>
+              )}
               <div className="absolute bottom-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-zinc-600 flex items-center gap-1 shadow-sm">
                 <span className="material-symbols-outlined text-sm">schedule</span>
                 {selectedRecipe.time}
@@ -196,7 +187,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
            <p className="text-zinc-500 dark:text-zinc-400 italic text-sm">{selectedRecipe.description}</p>
         </div>
 
-        {/* Ingredients Section */}
         <div className="px-5 mb-8">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Ingredientes</h3>
@@ -219,7 +209,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
           </div>
         </div>
 
-        {/* Cooking Mode Button */}
         <div className="px-5 mb-8">
            <button 
              onClick={startCooking}
@@ -230,15 +219,12 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
            </button>
         </div>
 
-        {/* Instructions Section */}
         <div className="px-5 mb-24">
           <div className="flex items-center justify-between mb-4">
             <h3 className="text-lg font-bold text-zinc-900 dark:text-white">Preparación</h3>
           </div>
           <div className="space-y-6 relative">
-            {/* Vertical Line */}
             <div className="absolute left-[15px] top-4 bottom-4 w-0.5 bg-zinc-100 dark:bg-zinc-800"></div>
-
             {selectedRecipe.instructions.map((step, i) => (
               <div key={i} className="relative flex gap-5">
                 <div className="size-8 rounded-full bg-zinc-900 dark:bg-zinc-700 text-white flex items-center justify-center text-sm font-bold shrink-0 z-10 shadow-lg ring-4 ring-white dark:ring-zinc-900">
@@ -258,7 +244,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
   // 3. RECIPE LIST VIEW (Default)
   return (
     <div className="min-h-screen bg-white dark:bg-zinc-900 transition-colors duration-300">
-      {/* Header matching the screenshot */}
       <header className="sticky top-0 z-50 bg-white dark:bg-zinc-900 px-5 pt-8 pb-4 shadow-sm dark:shadow-zinc-800/50">
         <div className="flex items-center justify-between mb-4">
           <div className="flex items-center gap-3">
@@ -278,7 +263,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
           </button>
         </div>
 
-        {/* Search Bar */}
         <div className="relative mb-4">
           <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400">search</span>
           <input 
@@ -298,7 +282,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
           )}
         </div>
 
-        {/* Categories Pills */}
         <div className="flex gap-2 overflow-x-auto hide-scrollbar pb-1">
           {categories.map((cat) => (
             <button 
@@ -318,7 +301,7 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
       
       {/* Active Pantry Filters Banner */}
       {selectedPantryIngredients.length > 0 && (
-        <div className="px-5 pt-4">
+        <div className="px-5 pt-4 space-y-3">
           <div className="bg-[#578e76]/10 border border-[#578e76]/20 rounded-2xl p-4 flex items-start justify-between">
             <div className="flex-1">
               <p className="text-xs font-bold uppercase tracking-widest text-[#578e76] mb-2">Usando tu despensa:</p>
@@ -351,18 +334,20 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
               onClick={() => handleOpenRecipe(recipe)}
               className="flex flex-col bg-white dark:bg-zinc-800 rounded-[32px] overflow-hidden shadow-[0_15px_45px_-15px_rgba(0,0,0,0.08)] border border-zinc-50 dark:border-zinc-700 cursor-pointer active:scale-[0.98] transition-all"
             >
-              {/* Image Placeholder Section */}
-              <div className="relative w-full aspect-[1/1] sm:aspect-[4/3] bg-primary/20 flex items-center justify-center">
-                <span className="material-symbols-outlined text-6xl text-primary-dark/40">restaurant_menu</span>
+              {/* Image Section */}
+              <div className="relative w-full aspect-[1/1] sm:aspect-[4/3] bg-primary/20 flex items-center justify-center overflow-hidden">
+                {recipe.imageUrl ? (
+                    <img src={recipe.imageUrl} alt={recipe.title} className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" />
+                ) : (
+                    <span className="material-symbols-outlined text-6xl text-primary-dark/40">restaurant_menu</span>
+                )}
                 
-                {/* Category Badge (Left) */}
                 <div className="absolute top-5 left-5">
                   <div className="px-4 py-1.5 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md rounded-full shadow-lg">
                     <span className="text-[11px] font-black uppercase text-[#ff5e92]">{recipe.ageCategory}</span>
                   </div>
                 </div>
 
-                {/* Time Badge (Right) */}
                 <div className="absolute top-5 right-5">
                   <div className="px-4 py-1.5 bg-zinc-900/90 dark:bg-zinc-800/90 backdrop-blur-md rounded-full shadow-lg flex items-center gap-2">
                     <span className="material-symbols-outlined text-[14px] text-white">schedule</span>
@@ -394,7 +379,6 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
                       </span>
                     ))}
                   </div>
-                  {/* Open icon button in black circle */}
                   <button className="flex items-center justify-center size-12 rounded-[20px] bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 shadow-xl shadow-zinc-200 dark:shadow-none">
                     <span className="material-symbols-outlined text-[22px]">auto_stories</span>
                   </button>
@@ -405,7 +389,7 @@ const RecipeHomeView: React.FC<RecipeHomeViewProps> = ({
         ) : (
           <div className="flex flex-col items-center justify-center py-10 text-center">
             <span className="material-symbols-outlined text-4xl text-zinc-300 dark:text-zinc-600 mb-4">no_meals</span>
-            <p className="text-zinc-500 dark:text-zinc-400 font-medium">No hay recetas que coincidan con tu búsqueda.</p>
+            <p className="text-zinc-500 dark:text-zinc-400 font-medium max-w-[200px] mx-auto">No encontré recetas guardadas con esos ingredientes.</p>
             <button 
               onClick={() => {
                 if (onClearPantryFilter) onClearPantryFilter();
