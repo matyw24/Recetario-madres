@@ -42,29 +42,42 @@ const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selected
         </button>
       </header>
 
-      <section className="px-6 pt-4 pb-4">
+      <section className="px-6 pt-2 pb-4">
         <h2 className="text-3xl font-extrabold leading-tight tracking-tight text-text-main dark:text-white">
           ¿Qué tienes hoy a mano?
         </h2>
         <p className="mt-2 text-text-muted dark:text-text-muted/80 text-base">
-          Toque los ingredientes para seleccionarlos. Te ayudaremos a decidir qué cocinar.
+          Selecciona ingredientes para ver recetas.
         </p>
       </section>
 
-      <div className="px-6 py-4">
+      <div className="px-6 pb-6 space-y-4">
+        {/* Search Bar */}
         <div className="relative">
           <span className="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400">search</span>
           <input 
-            className="w-full rounded-full border-none bg-white dark:bg-zinc-800 dark:text-white py-4 pl-12 pr-4 shadow-sm focus:ring-2 focus:ring-primary transition-all outline-none" 
+            className="w-full rounded-2xl border-none bg-white dark:bg-zinc-800 dark:text-white py-4 pl-12 pr-4 shadow-sm focus:ring-2 focus:ring-primary transition-all outline-none" 
             placeholder="Buscar ingrediente..." 
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
+
+        {/* Action Button - Moved Up */}
+        <button 
+          onClick={onSearch}
+          disabled={selectedCount === 0}
+          className={`flex w-full items-center justify-center rounded-2xl h-14 px-5 text-base font-bold shadow-lg transition-all active:scale-95 ${
+            selectedCount > 0 ? 'bg-primary text-text-main shadow-primary/20 hover:bg-primary-dark transform hover:-translate-y-0.5' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-600 shadow-none cursor-not-allowed'
+          }`}
+        >
+          <span className="material-symbols-outlined mr-2">search_insights</span>
+          <span>Buscar recetas ({selectedCount})</span>
+        </button>
       </div>
 
-      <main className="flex-1 px-4 py-4">
+      <main className="flex-1 px-4 pb-12">
         <div className="flex flex-wrap gap-3 justify-start">
           {filtered.map((ing) => (
             <button 
@@ -83,37 +96,22 @@ const PantryView: React.FC<PantryViewProps> = ({ ingredients, onToggle, selected
           ))}
         </div>
 
-        <div className="mt-12 p-6 rounded-xl bg-primary/20 border border-primary/30">
+        {/* Progress Bar kept at bottom of list contextually */}
+        <div className="mt-8 p-6 rounded-xl bg-white dark:bg-zinc-800 border border-zinc-100 dark:border-zinc-700 shadow-sm">
           <div className="flex items-center justify-between mb-4">
-            <p className="text-sm font-bold uppercase tracking-widest text-[#578e76] dark:text-[#a8e5cc]">Estado de Stock</p>
-            <span className="text-xs font-medium bg-primary px-2 py-1 rounded-full text-text-main">
-              {selectedCount}/10 Seleccionados
+            <p className="text-sm font-bold uppercase tracking-widest text-[#578e76] dark:text-[#a8e5cc]">Nivel de Despensa</p>
+            <span className="text-xs font-medium bg-zinc-100 dark:bg-zinc-700 px-2 py-1 rounded-full text-zinc-600 dark:text-zinc-300">
+              {selectedCount} items
             </span>
           </div>
-          <div className="w-full bg-white dark:bg-zinc-700 h-2 rounded-full overflow-hidden">
+          <div className="w-full bg-zinc-100 dark:bg-zinc-700 h-2 rounded-full overflow-hidden">
             <div 
               className="bg-[#578e76] dark:bg-[#a8e5cc] h-full transition-all duration-500" 
-              style={{ width: `${(selectedCount / 10) * 100}%` }}
+              style={{ width: `${Math.min((selectedCount / 10) * 100, 100)}%` }}
             ></div>
           </div>
-          <p className="mt-3 text-xs text-[#578e76] dark:text-[#a8e5cc] leading-relaxed">
-            Añade más ingredientes para desbloquear recetas personalizadas que reducen el desperdicio.
-          </p>
         </div>
       </main>
-
-      <footer className="p-6">
-        <button 
-          onClick={onSearch}
-          disabled={selectedCount === 0}
-          className={`flex w-full items-center justify-center rounded-full h-16 px-5 text-lg font-bold shadow-xl transition-all active:scale-95 ${
-            selectedCount > 0 ? 'bg-primary text-text-main shadow-primary/20' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 dark:text-zinc-600 shadow-none'
-          }`}
-        >
-          <span className="material-symbols-outlined mr-2">search_insights</span>
-          <span>Buscar con lo que tengo</span>
-        </button>
-      </footer>
     </div>
   );
 };
