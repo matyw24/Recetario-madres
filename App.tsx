@@ -6,6 +6,7 @@ import PantryView from './components/PantryView';
 import FreezerView from './components/FreezerView';
 import ShoppingListView from './components/ShoppingListView';
 import RecipeHomeView from './components/RecipeHomeView';
+import HomeDashboardView from './components/HomeDashboardView';
 import SettingsMenu from './components/SettingsMenu';
 import AuthView from './components/AuthView';
 import { supabase } from './supabaseClient';
@@ -15,6 +16,7 @@ const App: React.FC = () => {
   const [session, setSession] = useState<Session | null>(null);
   const [loadingSession, setLoadingSession] = useState(true);
 
+  // Default view is now 'home' (The new dashboard), recipes is separate
   const [currentView, setCurrentView] = useState<ViewType>('home');
   const [ingredients, setIngredients] = useState<Ingredient[]>(INITIAL_INGREDIENTS);
   const [freezerItems, setFreezerItems] = useState<FreezerItem[]>([]);
@@ -134,12 +136,25 @@ const App: React.FC = () => {
 
   const renderView = () => {
     switch (currentView) {
+      case 'home':
+        return <HomeDashboardView 
+          onNavigate={(view) => setCurrentView(view)} 
+          onOpenSettings={() => setIsSettingsOpen(true)}
+        />;
+      case 'recipes':
+        return <RecipeHomeView 
+          recipes={recipes} 
+          onAddToShoppingList={addToShoppingList}
+          selectedPantryIngredients={selectedIngredientNames}
+          onClearPantryFilter={clearPantrySelection}
+          onOpenSettings={() => setIsSettingsOpen(true)}
+        />;
       case 'pantry':
         return <PantryView 
           ingredients={ingredients} 
           onToggle={toggleIngredient} 
           selectedCount={selectedIngredientsCount}
-          onSearch={() => setCurrentView('home')}
+          onSearch={() => setCurrentView('recipes')}
           onOpenSettings={() => setIsSettingsOpen(true)}
         />;
       case 'freezer':
@@ -154,15 +169,8 @@ const App: React.FC = () => {
           setItems={setShoppingList} 
           onOpenSettings={() => setIsSettingsOpen(true)}
         />;
-      case 'home':
       default:
-        return <RecipeHomeView 
-          recipes={recipes} 
-          onAddToShoppingList={addToShoppingList}
-          selectedPantryIngredients={selectedIngredientNames}
-          onClearPantryFilter={clearPantrySelection}
-          onOpenSettings={() => setIsSettingsOpen(true)}
-        />;
+        return null;
     }
   };
 
@@ -179,29 +187,35 @@ const App: React.FC = () => {
         userEmail={session.user.email}
       />
 
-      <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border-t border-zinc-50 dark:border-zinc-800 px-8 py-5 flex justify-between items-center z-50 transition-colors duration-300">
+      <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-white/95 dark:bg-zinc-900/95 backdrop-blur-md border-t border-zinc-50 dark:border-zinc-800 px-4 py-3 flex justify-between items-end z-50 transition-colors duration-300">
         <NavButton 
           active={currentView === 'home'} 
-          icon="restaurant" 
-          label="RECETAS" 
+          icon="home" 
+          label="Inicio" 
           onClick={() => setCurrentView('home')} 
+        />
+        <NavButton 
+          active={currentView === 'recipes'} 
+          icon="restaurant" 
+          label="Recetas" 
+          onClick={() => setCurrentView('recipes')} 
         />
         <NavButton 
           active={currentView === 'pantry'} 
           icon="inventory_2" 
-          label="DESPENSA" 
+          label="Despensa" 
           onClick={() => setCurrentView('pantry')} 
         />
         <NavButton 
           active={currentView === 'shopping'} 
           icon="shopping_cart" 
-          label="COMPRAS" 
+          label="Compras" 
           onClick={() => setCurrentView('shopping')} 
         />
         <NavButton 
           active={currentView === 'freezer'} 
           icon="kitchen" 
-          label="FREEZER" 
+          label="Freezer" 
           onClick={() => setCurrentView('freezer')} 
         />
       </nav>
@@ -222,10 +236,12 @@ interface NavButtonProps {
 const NavButton: React.FC<NavButtonProps> = ({ active, icon, label, onClick }) => (
   <button 
     onClick={onClick}
-    className={`flex flex-col items-center gap-1.5 transition-all ${active ? 'text-zinc-900 dark:text-white font-black' : 'text-zinc-300 dark:text-zinc-600'}`}
+    className={`flex flex-col items-center gap-1 min-w-[50px] transition-all ${active ? 'text-zinc-900 dark:text-white' : 'text-zinc-300 dark:text-zinc-600'}`}
   >
-    <span className={`material-symbols-outlined text-[26px] ${active ? 'fill-1' : ''}`} style={{ fontWeight: active ? '700' : '400' }}>{icon}</span>
-    <span className={`text-[9px] font-black uppercase tracking-widest ${active ? 'text-[#578e76] dark:text-[#a8e5cc]' : 'text-zinc-300 dark:text-zinc-600'}`}>{label}</span>
+    <div className={`p-1 rounded-xl transition-all duration-300 ${active ? 'bg-[#c1f0db] dark:bg-[#578e76]/40 -translate-y-2' : ''}`}>
+      <span className={`material-symbols-outlined text-[24px] ${active ? 'fill-1 text-[#101915] dark:text-[#c1f0db]' : ''}`} style={{ fontWeight: active ? '700' : '400' }}>{icon}</span>
+    </div>
+    <span className={`text-[9px] font-black uppercase tracking-wider transition-opacity duration-300 ${active ? 'opacity-100 text-[#578e76] dark:text-[#a8e5cc] -translate-y-1' : 'opacity-0 h-0 overflow-hidden'}`}>{label}</span>
   </button>
 );
 

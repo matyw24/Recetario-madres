@@ -1,5 +1,5 @@
 
-export type ViewType = 'home' | 'pantry' | 'shopping' | 'freezer';
+export type ViewType = 'home' | 'recipes' | 'pantry' | 'shopping' | 'freezer';
 
 export type AgeCategory = '6m' | '7-9m' | '10-12m' | '1-2a' | 'Snacks';
 
