@@ -44,7 +44,7 @@ const FOODS_DB = [
   },
   { 
     name: 'Fresas', 
-    img: 'https://images.unsplash.com/photo-1464965911861-746a04b4b0ae?w=300&q=80',
+    img: 'https://static.wikia.nocookie.net/esharrypotter/images/7/76/Fresa.jpg/revision/latest?cb=20200713112301',
     safe_offer: 'Si son grandes y duras, ofrecer enteras para chupar. Si son blandas, cortar en láminas o cuartos. Nunca dar enteras pequeñas que quepan en la boca.',
     nutrients: 'Vitamina C (ayuda a absorber hierro).'
   },
@@ -119,7 +119,7 @@ const GUIDES_DB = [
     id: 'cuando',
     title: 'Cuándo empezar (Requisitos)', 
     icon: 'calendar_today', 
-    img: 'https://images.unsplash.com/photo-1544126566-4744279f870e?w=400&q=80', // Madre y bebé
+    img: 'https://mibebeyyo.elmundo.es/images/bebes2/productos-piel-bebe.webp', // Actualizado
     content: `
       La OMS recomienda iniciar a los 6 meses cumplidos.
       
@@ -164,7 +164,7 @@ const GUIDES_DB = [
     id: 'agua',
     title: 'El Agua: ¿Cuándo y Cómo?',
     icon: 'water_drop',
-    img: 'https://images.unsplash.com/photo-1559839914-17a60a98f9d6?w=400&q=80', // Vaso de bebé
+    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGQbPAXhAQfUa50B9n_h_cuK7n3M4Y9ArEeA&s', // Actualizado
     content: `
       **Antes de los 6 meses:** Lactancia exclusiva (materna o fórmula). No necesitan agua.
       
@@ -178,7 +178,7 @@ const GUIDES_DB = [
 const BLOG_DB = [
   { 
     title: 'Mi bebé se niega a comer, ¿por qué?', 
-    img: 'https://images.unsplash.com/photo-1555529771-835f59e975c5?w=800&q=80', // Bebé pensativo/serio en la mesa
+    img: 'https://i.blogs.es/3c4d02/2560_3000/840_560.jpg', // Actualizado
     body: "Es normal que el apetito fluctúe. Puede ser por dentición, enfermedad, sueño o simplemente una fase de crecimiento más lenta. No presiones. Ofrece alimentos variados y mantén el ambiente relajado. Si el crecimiento es normal, no hay de qué preocuparse."
   },
   { 
