@@ -17,6 +17,7 @@ export interface FreezerItem {
   quantity: number;
   imageUrl: string;
   reheatingTips: string[];
+  user_id?: string;
 }
 
 export interface ShoppingItem {
@@ -24,6 +25,7 @@ export interface ShoppingItem {
   name: string;
   category: 'FRUTERÍA' | 'LÁCTEOS' | 'PASILLOS' | 'CARNICERÍA';
   checked: boolean;
+  user_id?: string;
 }
 
 export interface Recipe {

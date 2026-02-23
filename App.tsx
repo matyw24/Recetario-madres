@@ -107,25 +107,59 @@ const App: React.FC = () => {
 
   // --- Main App Logic ---
 
-  const toggleIngredient = (id: string) => {
+  const toggleIngredient = async (id: string) => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      alert('Debes iniciar sesión para guardar');
+      return;
+    }
+
+    const ingredient = ingredients.find(i => i.id === id);
+    if (!ingredient) return;
+
+    const isSelected = !ingredient.selected;
+
     setIngredients(prev => prev.map(ing => 
-      ing.id === id ? { ...ing, selected: !ing.selected } : ing
+      ing.id === id ? { ...ing, selected: isSelected } : ing
     ));
+
+    if (isSelected) {
+      const nuevoItem = { item_id: id, user_id: user.id };
+      console.log("Intentando guardar:", nuevoItem);
+      await supabase.from('pantry').insert(nuevoItem);
+    } else {
+      await supabase.from('pantry').delete().eq('item_id', id).eq('user_id', user.id);
+    }
   };
 
-  const clearPantrySelection = () => {
+  const clearPantrySelection = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      alert('Debes iniciar sesión para guardar');
+      return;
+    }
+
     setIngredients(prev => prev.map(ing => ({ ...ing, selected: false })));
+    await supabase.from('pantry').delete().eq('user_id', user.id);
   };
 
   const addToShoppingList = async (items: string[]) => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      alert('Debes iniciar sesión para guardar');
+      return;
+    }
+
     const newItems: ShoppingItem[] = items.map((item, index) => ({
       id: `shop_${Date.now()}_${index}`,
       name: item,
       category: 'PASILLOS', 
-      checked: false
+      checked: false,
+      user_id: user.id
     }));
 
     setShoppingList(prev => [...prev, ...newItems]);
+    console.log("Intentando guardar:", newItems);
     await supabase.from('shopping_items').insert(newItems);
   };
 

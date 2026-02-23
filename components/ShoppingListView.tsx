@@ -14,6 +14,12 @@ const ShoppingListView: React.FC<ShoppingListViewProps> = ({ items, setItems, on
   const [showClearConfirm, setShowClearConfirm] = useState(false);
 
   const toggleCheck = async (id: string) => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      console.error("Error: Usuario no autenticado");
+      return;
+    }
+
     const item = items.find(i => i.id === id);
     if (!item) return;
 
@@ -25,7 +31,7 @@ const ShoppingListView: React.FC<ShoppingListViewProps> = ({ items, setItems, on
     ));
 
     // DB
-    await supabase.from('shopping_items').update({ checked: newChecked }).eq('id', id);
+    await supabase.from('shopping_items').update({ checked: newChecked, user_id: user.id }).eq('id', id);
   };
 
   const deleteItem = async (id: string) => {
@@ -36,17 +42,25 @@ const ShoppingListView: React.FC<ShoppingListViewProps> = ({ items, setItems, on
   };
 
   const addItem = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      alert('Debes iniciar sesión para guardar');
+      return;
+    }
+
     if (!newItemName.trim()) return;
     const newItem: ShoppingItem = {
       id: Date.now().toString(),
       name: newItemName,
       category: 'PASILLOS',
-      checked: false
+      checked: false,
+      user_id: user.id
     };
     
     // Optimistic
     setItems(prev => [...prev, newItem]);
     
+    console.log("Intentando guardar:", newItem);
     // DB
     await supabase.from('shopping_items').insert(newItem);
     

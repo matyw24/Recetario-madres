@@ -21,6 +21,12 @@ const FreezerView: React.FC<FreezerViewProps> = ({ items, setItems, onOpenSettin
   const [newItemTips, setNewItemTips] = useState('');
 
   const updateQuantity = async (id: string, delta: number) => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      console.error("Error: Usuario no autenticado");
+      return;
+    }
+
     const item = items.find(i => i.id === id);
     if (!item) return;
     
@@ -32,7 +38,7 @@ const FreezerView: React.FC<FreezerViewProps> = ({ items, setItems, onOpenSettin
     ));
 
     // DB Update
-    await supabase.from('freezer_items').update({ quantity: newQuantity }).eq('id', id);
+    await supabase.from('freezer_items').update({ quantity: newQuantity, user_id: user.id }).eq('id', id);
   };
 
   const confirmDelete = async () => {
@@ -48,6 +54,12 @@ const FreezerView: React.FC<FreezerViewProps> = ({ items, setItems, onOpenSettin
   };
 
   const handleAddItem = async () => {
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) {
+      alert('Debes iniciar sesión para guardar');
+      return;
+    }
+
     if (!newItemName.trim()) return;
 
     const tipsArray = newItemTips.trim() 
@@ -60,21 +72,26 @@ const FreezerView: React.FC<FreezerViewProps> = ({ items, setItems, onOpenSettin
       description: newItemDesc || new Date().toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }),
       quantity: newItemQuantity,
       imageUrl: '', 
-      reheatingTips: tipsArray
+      reheatingTips: tipsArray,
+      user_id: user.id
     };
 
     // Optimistic
     setItems(prev => [...prev, newItem]);
     
-    // DB - Map to snake_case columns
-    await supabase.from('freezer_items').insert({
+    const dbItem = {
       id: newItem.id,
       name: newItem.name,
       description: newItem.description,
       quantity: newItem.quantity,
       image_url: newItem.imageUrl,
-      reheating_tips: newItem.reheatingTips
-    });
+      reheating_tips: newItem.reheatingTips,
+      user_id: user.id
+    };
+
+    console.log("Intentando guardar:", dbItem);
+    // DB - Map to snake_case columns
+    await supabase.from('freezer_items').insert(dbItem);
     
     // Reset and close
     setNewItemName('');

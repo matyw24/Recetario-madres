@@ -59,3 +59,23 @@ create policy "Public Access Shopping"
 on shopping_items for all 
 using (true) 
 with check (true);
+
+-- 4. Tabla para Opiniones de Usuarios (Feedback)
+create table user_feedback (
+  id uuid default gen_random_uuid() primary key,
+  user_id uuid,
+  email text,
+  content text not null,
+  created_at timestamp with time zone default timezone('utc'::text, now()) not null
+);
+
+alter table user_feedback enable row level security;
+
+-- Política para Feedback (Cualquiera puede insertar, solo admin puede leer)
+create policy "Public Insert Feedback" 
+on user_feedback for insert 
+with check (true);
+
+create policy "Public Read Feedback" 
+on user_feedback for select 
+using (true);
