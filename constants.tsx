@@ -91,7 +91,7 @@ export const INITIAL_FREEZER_ITEMS: FreezerItem[] = [
     name: 'Muffins de Espinaca',
     description: 'Etapa 6 meses+',
     quantity: 6,
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/04/receta-muffins-coliflor-queso-para-bebes-930x620.jpg',
     reheatingTips: [
       'Microondas: 30-45 segundos.',
       'Sartén: A fuego bajo tapado por 2 min.'
@@ -115,7 +115,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '6m',
     tags: ['INICIO', 'SUAVE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2023/08/Receta-porridge-avena-para-bebes-930x620.jpg',
     isQuick: true,
     ingredients: [
       '1/4 taza de avena en hojuelas',
@@ -139,7 +139,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '7-9m',
     tags: ['HIERRO', 'PROTEÍNA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/09/Receta-hamburguesas-ternera-calabaza-para-bebes-930x620.jpg',
     ingredients: [
       '100g de carne molida de ternera magra',
       '1/4 taza de zapallo rallado fino',
@@ -163,7 +163,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '6m',
     tags: ['BLW', 'ALTA FIBRA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/09/receta-tortitas-garbanzos-zanahoria-para-bebes-930x620.jpg',
     ingredients: [
       '1 zanahoria grande rallada',
       '1 huevo',
@@ -187,7 +187,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'EXPRESS'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/05/receta-bizcocho-manzana-para-bebes-930x620.jpg',
     ingredients: [
       '1 manzana roja',
       '2 cucharadas de mantequilla de maní (sin azúcar)',
@@ -208,7 +208,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRÍO', 'VITAMINAS'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb1-Ryiv_2EzmIo6_hs3YygF7ONkPtpCp0uw&s',
     ingredients: [
       '1 taza de mango picado',
       '1 taza de yogurt natural sin azúcar',
@@ -229,7 +229,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['TROPICAL', 'SIN AZÚCAR'],
-    imageUrl: '',
+    imageUrl: 'https://live-production.wcms.abc-cdn.net.au/eeaf77ed45187bd037642c21c04aa10e?impolicy=wcms_crop_resize&cropH=1080&cropW=1918&xPos=1&yPos=0&width=862&height=485',
     ingredients: [
       '2 plátanos maduros',
       '1/2 taza de coco rallado sin azúcar',
@@ -252,7 +252,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'GRASAS'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2025/12/Receta_quesadillas_pollo_aguacate-930x620.jpg',
     ingredients: [
       '1/2 pechuga de pollo cocida y desmenuzada',
       '1/2 palta (aguacate) madura',
@@ -275,7 +275,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CALCIO', 'SNACK'],
-    imageUrl: '',
+    imageUrl: 'https://foolproofliving.com/wp-content/uploads/2022/08/Frozen-Yogurt-Bark-Recipe.jpg',
     ingredients: [
       '1 taza de yogurt griego natural',
       '1/2 taza de frutos rojos picados (fresas, arándanos)',
@@ -297,7 +297,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '10-12m',
     tags: ['OMEGA 3', 'GOURMET'],
-    imageUrl: '',
+    imageUrl: 'https://somethingnutritiousblog.com/wp-content/uploads/2021/08/7707C55D-0114-466C-8526-B65A5FDB08D6-1-scaled.jpeg',
     ingredients: [
       '1 filete de salmón fresco',
       '1/4 taza de leche de coco',
@@ -320,7 +320,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '1-2a',
     tags: ['VEGGIE', 'SABROSO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/07/Receta-albondigas-berenjena-para-bebes-930x620.jpg',
     ingredients: [
       '1 berenjena mediana',
       '1 huevo',
@@ -344,7 +344,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FIBRA', 'SALUDABLE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2025/10/Receta_galletas_turron-930x620.jpg',
     ingredients: [
       '1 taza de quinoa cocida',
       '2 plátanos muy maduros',
@@ -368,7 +368,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['LONCHERA', 'PROTEÍNA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/08/receta-san-jacobo-jamon-cocido-para-bebes-930x620.jpg',
     ingredients: ['2 fetas de jamón cocido', '2 fetas de queso en barra', 'Queso crema (opcional)'],
     instructions: ['Extiende la feta de jamón.', 'Coloca el queso encima.', 'Enrolla firmemente y corta en bocados pequeños.']
   },
@@ -380,7 +380,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'FRESCO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHuweE1mnmHunrjjMISGEm93jjVqOJg59Q9g&s',
     ingredients: ['Tomates cherry', 'Bolitas de mozzarella (bocconcini)', 'Hojas de albahaca fresca'],
     instructions: ['Lava los tomates y la albahaca.', 'Inserta un tomate, una hoja de albahaca y una bolita de queso en un palillo corto.', 'Repite hasta terminar.']
   },
@@ -392,7 +392,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'CRUJIENTE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/05/receta-bizcocho-manzana-para-bebes-930x620.jpg',
     ingredients: ['1 manzana roja', 'Canela en polvo'],
     instructions: ['Corta la manzana en rodajas muy finas (mandolina es ideal).', 'Coloca en bandeja con papel manteca y espolvorea canela.', 'Hornea a temperatura muy baja (100°C) por 45-60 min hasta que sequen.']
   },
@@ -404,7 +404,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'DIP'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2024/09/Receta_pure_zanahoria_curcuma-930x620.jpg',
     ingredients: ['2 zanahorias', '1 taza de garbanzos cocidos', 'Jugo de limón', 'Aceite de oliva'],
     instructions: ['Corta las zanahorias en bastones.', 'Procesa los garbanzos con limón y aceite hasta lograr una pasta.', 'Sirve los bastones junto al hummus.']
   },
@@ -416,7 +416,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['RÁPIDO', 'SALUDABLE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/09/receta-tortitas-garbanzos-zanahoria-para-bebes-930x620.jpg',
     ingredients: ['2 tortitas de arroz inflado', '1/2 palta madura', 'Semillas de sésamo'],
     instructions: ['Unta la palta sobre las tortitas.', 'Decora con semillas de sésamo por encima.']
   },
@@ -428,7 +428,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'LONCHERA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/11/huevos-revueltos-para-bebes-930x620.jpg',
     ingredients: ['6 huevos de codorniz', 'Agua'],
     instructions: ['Hierve los huevos por 4-5 minutos.', 'Enfría en agua helada y pélalos con cuidado.', 'Envía en un tupper pequeño.']
   },
@@ -440,7 +440,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['CASERO', 'ENERGÍA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/04/Receta-barritas-avena-manzana-canela-para-bebes-930x620.jpg',
     ingredients: ['1 taza de avena', '1/2 taza de miel (para +2 años)', 'Frutos secos picados'],
     instructions: ['Mezcla la avena y frutos secos.', 'Calienta la miel y vierte sobre la mezcla.', 'Prensa en un molde y refrigera antes de cortar en barras.']
   },
@@ -452,7 +452,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'SIN HARINA'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSDwk_LN27FQXMHLWnvIvnd10coancYVdVFQ&s',
     ingredients: ['1 pepino grande', 'Queso crema', 'Jamon o pavo'],
     instructions: ['Corta el pepino en rodajas gruesas.', 'Úsalas como tapas para hacer sándwiches con el queso y jamón en el medio.']
   },
@@ -464,7 +464,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DULCE', 'SIN COCCIÓN'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_sw7qfoWv0x-H9AJOjK6W46DotJLOlgBylg&s',
     ingredients: ['1 taza de dátiles sin carozo', '1/2 taza de nueces', 'Coco rallado'],
     instructions: ['Procesa los dátiles y nueces hasta formar una pasta.', 'Forma bolitas con las manos.', 'Pásalas por coco rallado.']
   },
@@ -476,7 +476,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'VERANO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFj5Dc3dYBzDCaNPgzvUNrMzQ3netuWobN9Q&s',
     ingredients: ['Uvas sin semillas (verdes o rojas)'],
     instructions: ['Lava bien las uvas y sécalas.', 'Coloca en una bolsa hermética y congela por 2 horas.', 'Consumir directamente del freezer (corte longitudinal para <4 años).']
   },
@@ -488,7 +488,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'SALADO'],
-    imageUrl: '',
+    imageUrl: 'https://www.allrecipes.com/thmb/rFjljUUBth7OQFwvrkwcyFUwO90=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-278443--Easy-Breakfast-Egg-Muffins-gw-ddmfs-beauty-4x3-8de490e94dac4f9baa51c73e02b67a28.jpg',
     ingredients: ['3 huevos', 'Espinaca picada', 'Queso rallado'],
     instructions: ['Bate los huevos con la espinaca y el queso.', 'Vierte en moldes de muffins engrasados.', 'Hornea a 180°C por 15 minutos.']
   },
@@ -500,7 +500,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FIBRA', 'CRUJIENTE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/08/receta-garbanzos-tomate-para-bebes-930x620.jpg',
     ingredients: ['Garbanzos cocidos', 'Aceite de oliva', 'Pimentón dulce'],
     instructions: ['Seca bien los garbanzos.', 'Mézclalos con aceite y pimentón.', 'Hornea a 200°C por 20-30 min moviendo a la mitad.']
   },
@@ -512,7 +512,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['LONCHERA', 'VERSÁTIL'],
-    imageUrl: '',
+    imageUrl: 'https://realhousemoms.com/wp-content/uploads/Spicy-Chicken-Tortilla-Roll-Ups-IG.jpg',
     ingredients: ['Tortilla de trigo o maíz', 'Hummus o queso crema', 'Espinaca fresca'],
     instructions: ['Unta la tortilla con el hummus.', 'Coloca hojas de espinaca.', 'Enrolla y corta en rodajas tipo espiral.']
   },
@@ -524,7 +524,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['RÁPIDO', 'CALCIO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLnPpGFJ7qzNUTedKviUSabzcgNpwzhfdK2g&s',
     ingredients: ['Queso en cubo (Gouda o Tybo)', 'Uvas sin semillas'],
     instructions: ['Corta el queso en cubos del tamaño de las uvas.', 'Mezcla en un tupper o alterna en palillos.']
   },
@@ -536,7 +536,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['BEBIBLE', 'FRUTA'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ6hQHAYLrhjFsAmf7IMzKuRVP2--QeRLrFg&s',
     ingredients: ['1 taza de leche', '5 frutillas', '2 cdas de avena instantánea'],
     instructions: ['Licúa todos los ingredientes hasta que esté suave.', 'Sirve frío.']
   },
@@ -548,7 +548,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['COLORIDO', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWEIThqZG8HzD9-uBlEaCBxkEglRMmI1deIg&s',
     ingredients: ['1 remolacha cocida', '1 huevo', '1/2 taza harina avena', 'Leche'],
     instructions: ['Licúa la remolacha con el huevo y leche.', 'Agrega harina hasta tener consistencia de pancake.', 'Cocina en sartén vuelta y vuelta.']
   },
@@ -560,7 +560,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DULCE', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPv1O8tgwNBQZ5cPJUXofKSUbz5XEH9EVQMA&s',
     ingredients: ['1 taza zanahoria rallada fina', '1/2 taza nueces molidas', 'Coco rallado', 'Dátiles'],
     instructions: ['Procesa todo junto hasta formar una masa.', 'Haz bolitas y refrigera.']
   },
@@ -572,7 +572,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'RÁPIDO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/05/receta-bizcocho-manzana-para-bebes-930x620.jpg',
     ingredients: ['Manzana verde', 'Mantequilla de maní', 'Granola'],
     instructions: ['Corta la manzana en rodajas.', 'Unta mantequilla de maní en una rodaja, agrega granola y tapa con otra rodaja.']
   },
@@ -584,7 +584,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CEREAL', 'COMPARTIR'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/10/receta-nuggets-pollo-para-bebes-930x620.jpg',
     ingredients: ['Maíz pisingallo', 'Aceite', 'Pizca de sal o azúcar'],
     instructions: ['Calienta aceite en olla, agrega maíz y tapa.', 'Mueve la olla hasta que dejen de explotar.']
   },
@@ -596,7 +596,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRESCO', 'POSTRE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/03/Recetas_pures_papillas_estrenimiento-930x620.jpg',
     ingredients: ['Gelatina de sabor', 'Trozos de durazno o pera'],
     instructions: ['Prepara la gelatina según el paquete.', 'Agrega la fruta picada antes de que cuaje y refrigera.']
   },
@@ -608,7 +608,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CALIENTE', 'EXPRESS'],
-    imageUrl: '',
+    imageUrl: 'https://www.tastingtable.com/img/gallery/lemon-mug-cake-recipe/l-intro-1646068985.jpg',
     ingredients: ['4 cdas harina', '2 cdas azúcar', '1 huevo', 'Jugo limón', 'Aceite'],
     instructions: ['Mezcla todo en una taza apta microondas.', 'Cocina 1:30 a 2 minutos en potencia máxima.']
   },
@@ -620,7 +620,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['VEGANO', 'PROTEÍNA'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMuPRYOEEIWYNPwT9r6ei7lM3etRL49ihvLg&s',
     ingredients: ['Tofu firme', 'Pan rallado', 'Salsa de soja'],
     instructions: ['Corta el tofu en triángulos.', 'Pásalo por salsa de soja y luego pan rallado.', 'Hornea o dora en sartén hasta que esté crocante.']
   },
@@ -632,7 +632,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['HORNO', 'SALADO'],
-    imageUrl: '',
+    imageUrl: 'https://www.simplyrecipes.com/thmb/VwRcO9o9qpWWw5KkcsNw8EWHtaY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Prosciutto-Cheese-Puff-Pastry-LEAD-01-3537247a5c32444f8eb5ff03559deeab.jpg',
     ingredients: ['Tapa de pascualina (hojaldre)', 'Queso rallado', 'Jamón picado'],
     instructions: ['Estira la masa, cubre con jamón y queso.', 'Enrolla y corta rodajas.', 'Hornea 15 min hasta dorar.']
   },
@@ -644,7 +644,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['GOURMET', 'FRESCO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2025/04/Receta_espaguetis_tomates_cherry-930x620.jpg',
     ingredients: ['Tomates cherry', 'Atún', 'Queso crema'],
     instructions: ['Corta una tapita al tomate y vacía con cuidado.', 'Mezcla atún con queso crema y rellena.']
   },
@@ -656,7 +656,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['HORNO', 'GUARNICIÓN'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/08/Receta_tortitas_boniato_asado-930x620.jpg',
     ingredients: ['Batatas', 'Aceite', 'Pimentón'],
     instructions: ['Corta batatas en bastones.', 'Mezcla con aceite y condimentos.', 'Hornea a fuego fuerte para que doren.']
   },
@@ -668,7 +668,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['POSTRE', 'SALUDABLE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPZQejY2-4yNfZEJigaHqaqXMH2WkcALpXw&s',
     ingredients: ['1 palta madura', '2 cdas cacao amargo', 'Miel o endulzante'],
     instructions: ['Procesa todo hasta obtener una crema lisa.', 'Refrigera antes de servir.']
   },
@@ -680,7 +680,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['SIN HARINA', 'CRUJIENTE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu239tWrzDVg5d19vaplCjx0RaQ3THUUmIrA&s',
     ingredients: ['Mix de semillas (lino, chía, sésamo)', 'Agua', 'Sal'],
     instructions: ['Hidrata las semillas en agua hasta que suelten el gel.', 'Extiende en placa finita y hornea lento hasta secar.']
   },
@@ -692,7 +692,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'RECICLAJE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSD2qs7hnxygznJBnMtbtcuwcZfro2WnReXVA&s',
     ingredients: ['Pollo cocido en cubos', 'Queso', 'Tomate'],
     instructions: ['Ensarta un cubo de pollo, uno de queso y uno de tomate en palillos pequeños.']
   },
@@ -704,7 +704,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['ALMUERZO', 'LONCHERA'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7TrCobSctykMA3pRFAgxze1psGlYyTDHHRQ&s',
     ingredients: ['Tapas de copetín', 'Salsa blanca espesa', 'Choclo en grano'],
     instructions: ['Mezcla choclo con salsa blanca y queso.', 'Rellena las tapas, cierra y hornea.']
   },
@@ -716,7 +716,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CEREAL', 'DULCE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiNUS8Q2_VLmb8S3fzEKWCgq0UpDXIAQCpLQ&s',
     ingredients: ['Arroz inflado', 'Mantequilla de maní', 'Miel'],
     instructions: ['Derrite mantequilla de maní con miel.', 'Mezcla con el arroz.', 'Enfría en molde y corta.']
   },
@@ -728,7 +728,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'POSTRE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHyH4R_tL1gS4Q-fY0aSNsd0uB476vqdk_DQ&s',
     ingredients: ['Peras firmes', 'Canela', 'Jugo de naranja'],
     instructions: ['Corta peras a la mitad.', 'Rocía con jugo y canela.', 'Hornea hasta tiernas.']
   },
@@ -740,7 +740,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Dificil',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'CASERO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1izZC2gPBKMkE88QVhyg0pJuufF_VdYnYrQ&s',
     ingredients: ['Pechuga de pollo', 'Manzana rallada', 'Condimentos'],
     instructions: ['Procesa el pollo crudo con manzana y especias.', 'Dale forma en papel film y hierve o cocina al vapor.']
   },
@@ -752,7 +752,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['CLÁSICO', 'LONCHERA'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXijykQRSoWbt7ZDLQ0bDd_Y5jLdnS6rqqHg&s',
     ingredients: ['Papas', 'Huevos', 'Cebolla'],
     instructions: ['Haz una tortilla tradicional.', 'Deja enfriar bien y corta en cubos de 2x2cm.']
   },
@@ -764,7 +764,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['MERIENDA', 'FLEXIBLE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdH928URA6rB2ynR2wNMU2v7fe4EsuqiHz5A&s',
     ingredients: ['Harina de avena', 'Leche', 'Huevo'],
     instructions: ['Mezcla hasta lograr masa líquida.', 'Haz crepes finos en sartén.', 'Rellena con fruta o queso.']
   },
@@ -776,7 +776,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['VEGGIE', 'DULCE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2023/10/Receta-magdalenas-calabaza-para-bebes-930x620.jpg',
     ingredients: ['Puré de calabaza', 'Harina', 'Azúcar mascabo', 'Aceite'],
     instructions: ['Mezcla húmedos con secos.', 'Forma galletas.', 'Hornea 15 min a 180°C.']
   },
@@ -788,7 +788,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['VERDE', 'CRUJIENTE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNtf_SauxKdp1xLNZs3hs72J3shs5bz56VNQ&s',
     ingredients: ['Hojas de Kale (sin tallo)', 'Aceite oliva', 'Sal'],
     instructions: ['Masajea las hojas con aceite.', 'Hornea a fuego medio hasta que estén secas y crujientes (cuidado que se queman rápido).']
   },
@@ -800,7 +800,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DULCE', 'FRUTA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2024/09/Receta_donuts_express_microondas-930x620.jpg',
     ingredients: ['Mandarinas', 'Chocolate amargo derretido'],
     instructions: ['Pela la mandarina.', 'Sumerge la mitad de cada gajo en chocolate.', 'Deja enfriar sobre papel manteca.']
   },
@@ -812,7 +812,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'CALIENTE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2026/02/Receta_pure_frijoles-930x620.jpg',
     ingredients: ['Tortillas de trigo', 'Porotos negros pisados', 'Queso'],
     instructions: ['Unta pasta de porotos en tortilla, agrega queso.', 'Tapa con otra tortilla y dora en sartén hasta derretir queso.']
   },
@@ -824,7 +824,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['PROTEÍNA', 'SALADO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/01/receta-albondigas-arroz-pavo-verduras-para-bebes-930x620.jpg',
     ingredients: ['Carne picada de pavo/pollo', 'Avena', 'Huevo'],
     instructions: ['Mezcla todo y condimenta.', 'Haz bolitas pequeñas.', 'Hornea hasta que estén cocidas.']
   },
@@ -836,7 +836,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['DIVERSIÓN', 'LONCHERA'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgz76AA0DZLLYqh7FNJYwlV0caDXvnD_BKKQ&s',
     ingredients: ['Pan de molde sin corteza', 'Queso crema', 'Palta/Jamón'],
     instructions: ['Aplana el pan con palote.', 'Rellena y enrolla.', 'Corta en rodajas como sushi.']
   },
@@ -848,7 +848,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRESCO', 'PORTÁTIL'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCkXQwYepYXhVaIoagrVZcCN8SyQ4qRyo5wA&s',
     ingredients: ['Yogur natural', 'Banana', 'Frutos rojos congelados'],
     instructions: ['Licúa el yogur con frutas congeladas para que quede espeso.', 'Coloca en frasco y pon granola arriba.']
   },
@@ -860,7 +860,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['HORNO', 'FIBRA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/06/Receta_galletas_avena_manzana-930x620.jpg',
     ingredients: ['Avena', 'Manzana rallada', 'Harina integral', 'Aceite'],
     instructions: ['Mezcla manzana, aceite y azúcar.', 'Agrega secos.', 'Hornea por 15 min.']
   },
@@ -872,7 +872,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['LIGERO', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2023/10/Receta_rollitos_calabacin_para_bebes-930x620.jpg',
     ingredients: ['Hojas de lechuga grandes', 'Pollo', 'Zanahoria rallada'],
     instructions: ['Usa la hoja como tortilla.', 'Rellena y enrolla.']
   },
@@ -884,7 +884,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['FRUTA', 'GOURMET'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0-o2dQyoJRMgfckQ_1SszSFtl0F0UZEyv-w&s',
     ingredients: ['Frutillas grandes', 'Yogur griego o queso crema endulzado'],
     instructions: ['Ahueca un poco las frutillas.', 'Rellena con la crema.']
   },
@@ -896,7 +896,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['CRUJIENTE', 'SALADO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP1Csm1AFkvSM2iTX3qPJs-liRGedK0bzoEg&s',
     ingredients: ['Pan pita', 'Aceite oliva', 'Orégano'],
     instructions: ['Corta el pan en triángulos.', 'Pincela con aceite y orégano.', 'Hornea hasta dorar.']
   },
@@ -908,7 +908,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FÁCIL', 'DULCE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF6mIDtS0MNaHBcEwmeXt7hTfbjVkxI_jgmw&s',
     ingredients: ['2 bananas', '2 huevos', '1/3 taza aceite', '1.5 taza harina'],
     instructions: ['Licúa banana, huevo y aceite.', 'Mezcla con harina.', 'Hornea en budinera.']
   },
@@ -920,7 +920,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['SALADO', 'QUESO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb9eE3NCtyl7bXOEot4ko29Kdv7p-U73sxNw&s',
     ingredients: ['Queso rallado', 'Manteca', 'Harina'],
     instructions: ['Forma una masa con partes iguales de los 3.', 'Haz tiritas.', 'Hornea hasta dorar.']
   },
@@ -932,7 +932,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['FRESCO', 'LÁCTEO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS_EF9hvI5dcrgNqqb6xWD7S1HfJ39ktT84A&s',
     ingredients: ['Pan integral', 'Ricota', 'Láminas de pera'],
     instructions: ['Tuesta el pan.', 'Unta ricota y coloca la pera.']
   },
@@ -944,7 +944,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: 'Snacks',
     tags: ['VERDE', 'DESAYUNO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/09/Receta-tortitas-sin-leche-para-bebes-930x620.jpg',
     ingredients: ['Espinaca cruda', 'Banana', 'Huevo', 'Avena'],
     instructions: ['Licúa todo junto.', 'Cocina como pancakes normales.']
   },
@@ -956,7 +956,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: 'Snacks',
     tags: ['ENERGÍA', '+2 AÑOS'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2025/10/Receta_bolas_datil_avena_frutos_secos-930x620.jpg',
     ingredients: ['Nueces', 'Almendras', 'Pasas de uva', 'Cereales'],
     instructions: ['Mezcla todo en un frasco hermético.', 'Sirve porciones pequeñas.']
   },
@@ -970,7 +970,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['DIVERSIÓN', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/02/receta-pasteles-zanahoria-para-bebes-930x620.jpg',
     ingredients: ['Rodaja de pan', '1 cda Yogurt', 'Zanahoria rallada', '1 Huevo', 'Canela', 'Vainilla', 'Aceite'],
     instructions: [
       'Aplasta la rodaja de pan con un rodillo.',
@@ -989,7 +989,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['ALMUERZO', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2023/10/Receta_tortilla_coliflor_para_bebes-930x620.jpg',
     ingredients: ['4 arbolitos de coliflor', '1/2 taza de caldo de pollo', '1 cda queso parmesano', 'Aceite'],
     instructions: [
       'Tritura el coliflor en licuadora o picadora hasta que parezca arroz.',
@@ -1006,7 +1006,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['FINGER FOOD', 'HIERRO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNrxBNJG1g0SSm0Lv-HbkveMTw6GdbzZFlPA&s',
     ingredients: ['60g queso rallado', '4 hojas espinaca', '1/2 taza arroz', '1/2 plátano', 'Harina de avena'],
     instructions: [
       'Mezcla arroz y queso en un bowl.',
@@ -1025,7 +1025,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['DESAYUNO', 'DULCE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqK99SHfBJ3aT7hfsr0uWfWyGLHqGc2wEyw&s',
     ingredients: ['Pan tajado', '1 huevo', 'Vainilla', 'Canela', 'Leche', '1/2 taza arándanos', '2 cdas queso crema', 'Aceite'],
     instructions: [
       'Tritura los arándanos y mézclalos con el queso crema.',
@@ -1043,7 +1043,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '10-12m',
     tags: ['OMEGA 3', 'GOURMET'],
-    imageUrl: '',
+    imageUrl: 'https://somethingnutritiousblog.com/wp-content/uploads/2021/08/7707C55D-0114-466C-8526-B65A5FDB08D6-1-scaled.jpeg',
     ingredients: ['125g salmón fresco', '1/2 taza leche de coco', '2 cdas yogur natural', '1 diente ajo', 'Cebolla', 'Aceite', 'Coco rallado'],
     instructions: [
       'Sofríe ajo y cebolla picados.',
@@ -1061,7 +1061,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['FINGER FOOD', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2024/04/Receta_palitos_bacalao_coliflor-930x620.jpg',
     ingredients: ['3 tallos coliflor cocido', '1 papa pequeña cocida', 'Queso rallado'],
     instructions: [
       'Tritura coliflor y papa con un tenedor.',
@@ -1078,7 +1078,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['SIN GLUTEN', 'DESAYUNO'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIVaETP1-dZUtEcEbQgNrg5iQdBsJ3-KnNtQ&s',
     ingredients: ['1 trozo yuca cocida', '1/2 taza queso mozzarella rallado'],
     instructions: [
       'Cocina la yuca hasta que esté blanda.',
@@ -1095,7 +1095,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['CENA', 'LIGERO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2023/10/Receta-magdalenas-calabaza-para-bebes-930x620.jpg',
     ingredients: ['1/2 zanahoria rallada', '1/2 taza queso mozzarella', '1 huevo'],
     instructions: [
       'Mezcla zanahoria rallada cruda, queso y huevo.',
@@ -1112,7 +1112,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['HORNO', 'BATCH COOKING'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/04/receta-muffins-coliflor-queso-para-bebes-930x620.jpg',
     ingredients: ['10 arboles coliflor', '2 huevos', '125g queso mozzarella', 'Ajo en polvo', 'Aceite de oliva'],
     instructions: [
       'Tritura el coliflor crudo hasta que parezca arroz.',
@@ -1129,7 +1129,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Media',
     ageCategory: '10-12m',
     tags: ['PROTEÍNA', 'HIERRO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/10/receta-nuggets-pollo-para-bebes-930x620.jpg',
     ingredients: ['250g pechuga pollo', '2 cdas queso crema', '4 hojas espinaca', '1 huevo', '2 cdas harina trigo', '4 cdas pan rallado', 'Aceite'],
     instructions: [
       'Cocina y pica la espinaca.',
@@ -1147,7 +1147,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['CLÁSICO', 'ALMUERZO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/03/Recetas_pures_papillas_estrenimiento-930x620.jpg',
     ingredients: ['150g papa', '40g pechuga pollo', '25g poro', 'Aceite de oliva'],
     instructions: [
       'Cocina papa y poro en agua por 20 min.',
@@ -1164,7 +1164,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['VEGGIE', 'HORNO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/05/receta-tortitas-platano-avena-para-bebes-930x620.jpg',
     ingredients: ['550g brócoli', '2 huevos', '60g harina almendra', '75g queso cheddar', '2 dientes ajo', 'Aceite de oliva'],
     instructions: [
       'Hierve el brócoli 5-10 min y escurre MUY bien el agua.',
@@ -1181,7 +1181,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['SNACK', 'ENERGÍA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/11/receta-sopa-fideos-verduras-para-bebes-930x620.jpg',
     ingredients: ['1 plátano muy maduro', '5 cdas avena', '2 cdas leche', '3 cdas anacardos crudos', 'Canela'],
     instructions: [
       'Tritura anacardos y aplasta el plátano.',
@@ -1198,7 +1198,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['MERIENDA', 'CASERO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/04/receta-croquetas-atun-para-bebes-930x620.jpg',
     ingredients: ['Cáscara naranja', '125ml jugo naranja', '1 huevo', '400g harina repostería', '100ml aceite oliva', 'Levadura', 'Canela', '120g dátiles'],
     instructions: [
       'Hidrata y tritura los dátiles hasta hacer pasta.',
@@ -1216,7 +1216,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['ALMUERZO', 'PRINCIPAL'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/04/receta-macarrones-queso-para-bebes-930x620.jpg',
     ingredients: ['200g pasta', '100g zapallo', '100g salchicha fresca', '1 diente ajo', '50g cebolla', 'Aceite oliva'],
     instructions: [
       'Saltea cebolla, ajo y zapallo en cubitos.',
@@ -1233,7 +1233,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['CENA', 'RÁPIDO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/01/receta-pure-manzana-pera-para-bebes-930x620.jpg',
     ingredients: ['2 huevos', '1 cda leche', 'Aceite oliva'],
     instructions: [
       'Bate los huevos con la leche.',
@@ -1249,7 +1249,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['VEGANO', 'HIERRO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/04/receta-lentejas-verduras-para-bebes-930x620.jpg',
     ingredients: ['300g lentejas', '200g arroz integral', '100g zanahoria', '100g cebolla', 'Aceite oliva'],
     instructions: [
       'Sofríe cebolla y zanahoria.',
@@ -1265,7 +1265,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['FAVORITO', 'PROTEÍNA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/01/receta-hamburguesas-pescado-blanco-para-bebes-930x620.jpg',
     ingredients: ['500g pechuga pollo', '175g queso crema', '2 huevos', '4 cdas harina trigo', '4 cdas pan rallado', 'Aceite oliva'],
     instructions: [
       'Tritura el pollo y mezcla con queso crema.',
@@ -1281,7 +1281,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['BATCH COOKING', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhQ2N-jQ_S_8zE1o72t0-K_W_F_v_Y_z_e_w&s',
     ingredients: ['350g coliflor', '5 huevos', '200g queso rallado', 'Ajo en polvo', 'Aceite oliva'],
     instructions: [
       'Tritura coliflor cruda.',
@@ -1297,7 +1297,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['ALMUERZO', 'LEGUMBRES'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/01/receta-pure-manzana-pera-para-bebes-930x620.jpg',
     ingredients: ['400g tomate natural', '300g garbanzos cocidos', '2 dientes ajo', 'Aceite oliva'],
     instructions: [
       'Cuela el tomate triturado para quitar exceso de agua.',
@@ -1313,7 +1313,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['BEBIDA', 'AVENA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/07/Receta-mini-pizzas-berenjena-para-bebes-930x620.jpg',
     ingredients: ['100g avena', '3 manzanas', 'Canela', 'Clavo de olor', 'Pimienta dulce', 'Agua'],
     instructions: [
       'Hierve agua con especias por 10 min.',
@@ -1330,7 +1330,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['POSTRE', 'FRUTA'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/11/receta-crema-calabaza-para-bebes-930x620.jpg',
     ingredients: ['200g harina', '90ml aceite oliva', 'Levadura', '3 huevos', '70ml leche', '3 manzanas', 'Canela'],
     instructions: [
       'Mezcla harina, levadura, leche, huevos, aceite y canela.',
@@ -1346,7 +1346,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['POSTRE', 'VEGGIE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/04/receta-lentejas-verduras-para-bebes-930x620.jpg',
     ingredients: ['220g harina', '400g zapallo', '75ml aceite oliva', '2 huevos', 'Levadura', 'Bicarbonato', 'Canela', 'Clavo', 'Nuez moscada', 'Azúcar (opcional)'],
     instructions: [
       'Cocina el zapallo y haz puré.',
@@ -1363,7 +1363,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['PESCADO', 'ALMUERZO'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2022/02/receta-galletas-platano-coco-para-bebes-930x620.jpg',
     ingredients: ['300g papas', '100g merluza', 'Aceite oliva', 'Pan rallado', 'Perejil'],
     instructions: [
       'Cocina papas y merluza.',
@@ -1380,7 +1380,7 @@ export const INITIAL_RECIPES: Recipe[] = [
     difficulty: 'Baja',
     ageCategory: '10-12m',
     tags: ['DESAYUNO', 'VERDE'],
-    imageUrl: '',
+    imageUrl: 'https://www.recetasparamibebe.com/wp-content/uploads/2021/04/receta-hamburguesas-lentejas-para-bebes-930x620.jpg',
     ingredients: ['1 taza espinacas baby', '1 yogur griego', '100g avena', '1/2 plátano'],
     instructions: [
       'Licúa todo junto hasta tener una masa.',

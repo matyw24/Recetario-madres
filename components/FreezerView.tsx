@@ -71,7 +71,7 @@ const FreezerView: React.FC<FreezerViewProps> = ({ items, setItems, onOpenSettin
       name: newItemName,
       description: newItemDesc || new Date().toLocaleDateString('es-ES', { month: 'long', day: 'numeric' }),
       quantity: newItemQuantity,
-      imageUrl: '', 
+      imageUrl: '',
       reheatingTips: tipsArray,
       user_id: user.id
     };
